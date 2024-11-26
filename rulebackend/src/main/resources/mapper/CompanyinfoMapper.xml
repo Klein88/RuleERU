@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="web.rulemanage.mapper.CompanyinfoMapper">
+
+    <resultMap id="BaseResultMap" type="web.rulemanage.domain.Companyinfo">
+            <id property="userid" column="UserID" jdbcType="INTEGER"/>
+            <result property="companyname" column="CompanyName" jdbcType="VARCHAR"/>
+            <result property="companytype" column="CompanyType" jdbcType="VARCHAR"/>
+            <result property="companyaddress" column="CompanyAddress" jdbcType="VARCHAR"/>
+            <result property="companytel" column="CompanyTel" jdbcType="VARCHAR"/>
+            <result property="companyregister" column="CompanyRegister" jdbcType="VARCHAR"/>
+            <result property="companyphoto" column="CompanyPhoto" jdbcType="VARCHAR"/>
+            <result property="companynumber" column="CompanyNumber" jdbcType="VARCHAR"/>
+            <result property="companystatue" column="CompanyStatue" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        UserID,CompanyName,CompanyType,
+        CompanyAddress,CompanyTel,CompanyRegister,
+        CompanyPhoto,CompanyNumber,CompanyStatue
+    </sql>
+</mapper>

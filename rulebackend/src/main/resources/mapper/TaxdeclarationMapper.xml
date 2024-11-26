@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="web.rulemanage.mapper.TaxdeclarationMapper">
+
+    <resultMap id="BaseResultMap" type="web.rulemanage.domain.Taxdeclaration">
+            <id property="declarationid" column="DeclarationID" jdbcType="INTEGER"/>
+            <result property="vatnumber" column="VATNumber" jdbcType="VARCHAR"/>
+            <result property="taxrate" column="TaxRate" jdbcType="DECIMAL"/>
+            <result property="taxnumbereffectivedate" column="TaxNumberEffectiveDate" jdbcType="DATE"/>
+            <result property="lastdeclarationdate" column="LastDeclarationDate" jdbcType="DATE"/>
+            <result property="gatewayid" column="GatewayID" jdbcType="VARCHAR"/>
+            <result property="gatewaypassword" column="GatewayPassword" jdbcType="VARCHAR"/>
+            <result property="lastreporteddate" column="LastReportedDate" jdbcType="DATE"/>
+            <result property="mtdusername" column="MTDUsername" jdbcType="VARCHAR"/>
+            <result property="mtdpassword" column="MTDPassword" jdbcType="VARCHAR"/>
+            <result property="companyregistrationlocation" column="CompanyRegistrationLocation" jdbcType="VARCHAR"/>
+            <result property="companyname" column="CompanyName" jdbcType="VARCHAR"/>
+            <result property="businesslicensenumber" column="BusinessLicenseNumber" jdbcType="VARCHAR"/>
+            <result property="companyestablishmentdate" column="CompanyEstablishmentDate" jdbcType="DATE"/>
+            <result property="companyoperationaladdress" column="CompanyOperationalAddress" jdbcType="VARCHAR"/>
+            <result property="postalcode" column="PostalCode" jdbcType="VARCHAR"/>
+            <result property="companyphonenumber" column="CompanyPhoneNumber" jdbcType="VARCHAR"/>
+            <result property="companycontactemail" column="CompanyContactEmail" jdbcType="VARCHAR"/>
+            <result property="legalrepresentativename" column="LegalRepresentativeName" jdbcType="VARCHAR"/>
+            <result property="mainsalesplatform" column="MainSalesPlatform" jdbcType="VARCHAR"/>
+            <result property="shopname" column="ShopName" jdbcType="VARCHAR"/>
+            <result property="informationlink" column="InformationLink" jdbcType="VARCHAR"/>
+            <result property="shopbackendselleraddress" column="ShopBackendSellerAddress" jdbcType="VARCHAR"/>
+            <result property="shopbackendcompanyname" column="ShopBackendCompanyName" jdbcType="VARCHAR"/>
+            <result property="mainbusinessscope" column="MainBusinessScope" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        DeclarationID,VATNumber,TaxRate,
+        TaxNumberEffectiveDate,LastDeclarationDate,GatewayID,
+        GatewayPassword,LastReportedDate,MTDUsername,
+        MTDPassword,CompanyRegistrationLocation,CompanyName,
+        BusinessLicenseNumber,CompanyEstablishmentDate,CompanyOperationalAddress,
+        PostalCode,CompanyPhoneNumber,CompanyContactEmail,
+        LegalRepresentativeName,MainSalesPlatform,ShopName,
+        InformationLink,ShopBackendSellerAddress,ShopBackendCompanyName,
+        MainBusinessScope,VATCertificate,VATDeclarationDocument,
+        ProxyCommitmentDocument,CompanyRegistrationProof,IDCardFront,
+        IDCardBack,Signature
+    </sql>
+</mapper>

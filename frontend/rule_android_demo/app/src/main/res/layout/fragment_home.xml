@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.HomeFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="44dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/tubiao" />
+        <TextView
+            android:id="@+id/tv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="欧盟合规综服平台"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:padding="5dp"/>
+
+        <ImageView
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:src="@drawable/rengong"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="80dp"/>
+    </LinearLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="代办总览"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:padding="5dp"/>
+
+                <LinearLayout
+                    android:id="@+id/linear1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/frame_back_1"
+                    android:orientation="vertical">
+                    <!-- 折叠部分的内容 -->
+                    <TextView
+                        android:id="@+id/title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="待提交资料 >"
+                        android:textColor="#ffffff"
+                        android:textSize="20sp" />
+                    <!-- 展开部分的内容 -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/content1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="30dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="VAT"
+                                    android:textColor="#FFF"
+                                    android:textSize="30sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tijiao_vat"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="1"
+                                    android:textColor="#FFF"
+                                    android:textSize="30sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="40dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="EPR"
+                                    android:textColor="#FFF"
+                                    android:textSize="30sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tijiao_epr"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="1"
+                                    android:textColor="#FFF"
+                                    android:textSize="30sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="40dp"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="产品合规"
+                                    android:textColor="#FFF"
+                                    android:textSize="30sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tijiao_hegui"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="2"
+                                    android:textColor="#FFF"
+                                    android:textSize="30sp"
+                                    android:textStyle="bold" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linear2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/frame_back_1"
+                    android:orientation="vertical">
+                    <!-- 折叠部分的内容 -->
+                    <TextView
+                        android:id="@+id/title2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="待申报 >"
+                        android:textSize="20sp"
+                        android:textColor="#FFF"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"/>
+                    <!-- 展开部分的内容 -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/content2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:visibility="gone">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="30dp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="VAT"
+                                    android:textColor="#FFF"
+                                    android:textStyle="bold"
+                                    android:textSize="30sp"
+                                    android:layout_gravity="center_horizontal"/>
+                                <TextView
+                                    android:id="@+id/shenbao_vat"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="1"
+                                    android:textColor="#FFF"
+                                    android:textStyle="bold"
+                                    android:textSize="30sp"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="40dp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="EPR"
+                                    android:textColor="#FFF"
+                                    android:textStyle="bold"
+                                    android:textSize="30sp"
+                                    android:layout_gravity="center_horizontal"/>
+                                <TextView
+                                    android:id="@+id/shenbao_epr"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="1"
+                                    android:textColor="#FFF"
+                                    android:textStyle="bold"
+                                    android:textSize="30sp"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="40dp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="产品合规"
+                                    android:textColor="#FFF"
+                                    android:textStyle="bold"
+                                    android:textSize="30sp"
+                                    android:layout_gravity="center_horizontal"/>
+                                <TextView
+                                    android:id="@+id/shenbao_hegui"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="1"
+                                    android:textColor="#FFF"
+                                    android:textStyle="bold"
+                                    android:textSize="30sp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/linear3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/frame_back_1"
+                    android:orientation="vertical">
+                    <!-- 折叠部分的内容 -->
+                    <TextView
+                        android:id="@+id/title3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="注册中 >"
+                        android:textSize="20sp"
+                        android:textColor="#fff"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"/>
+                    <!-- 展开部分的内容 -->
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/content3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="5dp"
+                        android:visibility="gone">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="30dp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="VAT"
+                                    android:textColor="#FFF"
+                                    android:textStyle="bold"
+                                    android:textSize="30sp"
+                                    android:layout_gravity="center_horizontal"/>
+                                <TextView
+                                    android:id="@+id/zhuce_vat"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="1"
+                                    android:textColor="#FFF"
+                                    android:textStyle="bold"
+                                    android:textSize="30sp"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="40dp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="EPR"
+                                    android:textColor="#FFF"
+                                    android:textStyle="bold"
+                                    android:textSize="30sp"
+                                    android:layout_gravity="center_horizontal"/>
+                                <TextView
+                                    android:id="@+id/zhuce_epr"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="1"
+                                    android:textColor="#FFF"
+                                    android:textStyle="bold"
+                                    android:textSize="30sp"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginStart="40dp"
+                                android:orientation="vertical">
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="产品合规"
+                                    android:textColor="#FFF"
+                                    android:textStyle="bold"
+                                    android:textSize="30sp"
+                                    android:layout_gravity="center_horizontal"/>
+                                <TextView
+                                    android:id="@+id/zhuce_hegui"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:text="1"
+                                    android:textColor="#FFF"
+                                    android:textStyle="bold"
+                                    android:textSize="30sp"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/Con_1"
+                android:layout_width="match_parent"
+                android:layout_height="524dp">
+
+                <LinearLayout
+                    android:layout_width="360dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="27dp"
+                    android:background="@drawable/frame_blue1"
+                    android:layout_gravity="center"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp">
+                    <EditText
+                        android:id="@+id/train_search"
+                        android:layout_width="290dp"
+                        android:layout_height="48dp"
+                        android:hint="搜索"/>
+                    <ImageView
+                        android:id="@+id/train_searchimg"
+                        android:layout_width="36dp"
+                        android:layout_height="36dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@drawable/item_search"/>
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/IB_SS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:contentDescription="123"
+                    android:src="@drawable/vathegui"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="80dp"/>
+
+                <ImageButton
+                    android:id="@+id/IB_GD"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="256dp"
+                    android:layout_marginTop="77dp"
+                    android:background="@null"
+                    android:contentDescription="123"
+                    android:src="@drawable/yisibaohu"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageButton
+                    android:id="@+id/IB_XF"
+                    android:layout_width="160dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:layout_marginTop="270dp"
+                    android:background="@null"
+                    android:contentDescription="123"
+                    android:src="@drawable/chanpinghegui"
+                    tools:ignore="MissingConstraints" />
+
+                <ImageButton
+                    android:id="@+id/IB_HJ"
+                    android:layout_width="210dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="177dp"
+                    android:layout_marginTop="270dp"
+                    android:background="@null"
+                    android:contentDescription="123"
+                    android:src="@drawable/eprhegui"
+                    tools:ignore="MissingConstraints" />
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

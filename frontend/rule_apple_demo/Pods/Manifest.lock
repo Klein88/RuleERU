@@ -1,0 +1,30 @@
+PODS:
+  - Alamofire (5.8.1)
+  - FloatingLabelTextFieldSwiftUI (4.2.1)
+  - Moya (15.0.0):
+    - Moya/Core (= 15.0.0)
+  - Moya/Core (15.0.0):
+    - Alamofire (~> 5.0)
+  - StepperView (1.6.7)
+
+DEPENDENCIES:
+  - FloatingLabelTextFieldSwiftUI
+  - Moya (~> 15.0)
+  - StepperView (~> 1.6.7)
+
+SPEC REPOS:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+    - Alamofire
+    - FloatingLabelTextFieldSwiftUI
+    - Moya
+    - StepperView
+
+SPEC CHECKSUMS:
+  Alamofire: 3ca42e259043ee0dc5c0cdd76c4bc568b8e42af7
+  FloatingLabelTextFieldSwiftUI: 28c373de56a07ce49318bdeeed18781ee6f2528f
+  Moya: 138f0573e53411fb3dc17016add0b748dfbd78ee
+  StepperView: 9b88922ef65712410c0e95c460cd115d33cfd933
+
+PODFILE CHECKSUM: 7527669c417b80b8a267d311a123db95ce9630f6
+
+COCOAPODS: 1.12.1

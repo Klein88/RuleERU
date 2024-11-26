@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="web.rulemanage.mapper.TaxrefundMapper">
+
+    <resultMap id="BaseResultMap" type="web.rulemanage.domain.Taxrefund">
+            <id property="taxrefundid" column="TaxRefundID" jdbcType="INTEGER"/>
+            <result property="country" column="Country" jdbcType="VARCHAR"/>
+            <result property="taxnumber" column="TaxNumber" jdbcType="VARCHAR"/>
+            <result property="declarationtype" column="DeclarationType" jdbcType="VARCHAR"/>
+            <result property="declarationcycle" column="DeclarationCycle" jdbcType="VARCHAR"/>
+            <result property="declarationdate" column="DeclarationDate" jdbcType="DATE"/>
+            <result property="refundamount" column="RefundAmount" jdbcType="DECIMAL"/>
+            <result property="operation" column="Operation" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        TaxRefundID,Country,TaxNumber,
+        DeclarationType,DeclarationCycle,DeclarationDate,
+        RefundAmount,Operation
+    </sql>
+</mapper>

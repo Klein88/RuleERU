@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="web.rulemanage.mapper.NewsMapper">
+
+    <resultMap id="BaseResultMap" type="web.rulemanage.domain.News">
+            <result property="newsid" column="NewsID" jdbcType="INTEGER"/>
+            <result property="title" column="Title" jdbcType="VARCHAR"/>
+            <result property="content" column="Content" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        NewsID,Title,Content
+    </sql>
+</mapper>

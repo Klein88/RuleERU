@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <!--高度30此处设置宽度无效-->
+    <size android:height="30dp"/>
+    <!--圆角弧度15-->
+    <corners android:radius="2dp"/>
+    <!--变化率定义从左到右的颜色不变-->
+    <gradient
+        android:endColor="#eeeef0"
+        android:startColor="#eeeef0"/>
+</shape>

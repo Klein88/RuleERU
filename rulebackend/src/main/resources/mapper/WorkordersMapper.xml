@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="web.rulemanage.mapper.WorkordersMapper">
+
+    <resultMap id="BaseResultMap" type="web.rulemanage.domain.Workorders">
+            <id property="workorderid" column="WorkOrderID" jdbcType="INTEGER"/>
+            <result property="userid" column="UserID" jdbcType="INTEGER"/>
+            <result property="workordertheme" column="WorkOrderTheme" jdbcType="VARCHAR"/>
+            <result property="description" column="Description" jdbcType="VARCHAR"/>
+            <result property="status" column="Status" jdbcType="VARCHAR"/>
+            <result property="creationdate" column="CreationDate" jdbcType="DATE"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        WorkOrderID,UserID,WorkOrderTheme,
+        Description,Status,CreationDate
+    </sql>
+</mapper>

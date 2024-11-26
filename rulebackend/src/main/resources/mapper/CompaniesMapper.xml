@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="web.rulemanage.mapper.CompaniesMapper">
+
+    <resultMap id="BaseResultMap" type="web.rulemanage.domain.Companies">
+            <id property="companyid" column="CompanyID" jdbcType="INTEGER"/>
+            <result property="userid" column="UserID" jdbcType="INTEGER"/>
+            <result property="companyname" column="CompanyName" jdbcType="VARCHAR"/>
+            <result property="companyaddress" column="CompanyAddress" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        CompanyID,UserID,CompanyName,
+        CompanyAddress
+    </sql>
+</mapper>

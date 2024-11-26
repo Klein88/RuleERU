@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="tax_rate">
+        <item>6</item>
+        <item>12</item>
+        <item>20</item>
+        <item>21</item>
+    </string-array>
+    <string-array name="taxpay">
+        <item>月度申报</item>
+        <item>季度申报</item>
+        <item>年度申报</item>
+    </string-array>
+    <string-array name="compliance_add">
+        <item>ISO Certification</item>
+        <item>Safety Compliance</item>
+        <item>Quality Assurance</item>
+    </string-array>
+    <string-array name="translate">
+        <item>中文</item>
+        <item>英语</item>
+        <item>德语</item>
+        <item>法语</item>
+        <item>意大利语</item>
+    </string-array>
+    <string-array name="form">
+        <item>折线图</item>
+        <item>柱状图</item>
+    </string-array>
+    <string-array name="shichang">
+        <item>化学品及相关产品</item>
+        <item>食品、饮食、烟草</item>
+        <item>机械及制造产品</item>
+        <item>原材料</item>
+    </string-array>
+    <string-array name="train_irb">
+        <item>英国税务局</item>
+        <item>法国税务局</item>
+        <item>德国税务局</item>
+        <item>意大利税务局</item>
+    </string-array>
+</resources>

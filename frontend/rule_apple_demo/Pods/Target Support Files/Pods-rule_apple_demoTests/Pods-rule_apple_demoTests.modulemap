@@ -1,0 +1,6 @@
+framework module Pods_rule_apple_demoTests {
+  umbrella header "Pods-rule_apple_demoTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

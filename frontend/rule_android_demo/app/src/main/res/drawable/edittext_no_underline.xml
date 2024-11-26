@@ -1,0 +1,13 @@
+<!-- res/drawable/edittext_no_underline.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/white" />
+    <stroke
+        android:width="3dp"
+        android:color="@android:color/holo_blue_light" />
+    <corners android:radius="12dp" /> <!-- 你可以调整半径来设置圆角的大小 -->
+    <padding
+        android:bottom="12dp"
+        android:left="10dp"
+        android:right="10dp"
+        android:top="12dp" />
+</shape>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="web.rulemanage.mapper.TaxpaymentMapper">
+
+    <resultMap id="BaseResultMap" type="web.rulemanage.domain.Taxpayment">
+            <id property="taxpaymentid" column="TaxPaymentID" jdbcType="INTEGER"/>
+            <result property="companyname" column="CompanyName" jdbcType="VARCHAR"/>
+            <result property="country" column="Country" jdbcType="VARCHAR"/>
+            <result property="taxnumber" column="TaxNumber" jdbcType="VARCHAR"/>
+            <result property="declarationtype" column="DeclarationType" jdbcType="VARCHAR"/>
+            <result property="amountdue" column="AmountDue" jdbcType="DECIMAL"/>
+            <result property="currency" column="Currency" jdbcType="VARCHAR"/>
+            <result property="declarationcycle" column="DeclarationCycle" jdbcType="VARCHAR"/>
+            <result property="declarationperiod" column="DeclarationPeriod" jdbcType="DATE"/>
+            <result property="duedate" column="DueDate" jdbcType="DATE"/>
+            <result property="paymentstatus" column="PaymentStatus" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        TaxPaymentID,CompanyName,Country,
+        TaxNumber,DeclarationType,AmountDue,
+        Currency,DeclarationCycle,DeclarationPeriod,
+        DueDate,PaymentStatus
+    </sql>
+</mapper>

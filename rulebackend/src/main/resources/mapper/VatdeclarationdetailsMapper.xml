@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="web.rulemanage.mapper.VatdeclarationdetailsMapper">
+
+    <resultMap id="BaseResultMap" type="web.rulemanage.domain.Vatdeclarationdetails">
+            <id property="declarationdetailid" column="DeclarationDetailID" jdbcType="INTEGER"/>
+            <result property="declarationid" column="DeclarationID" jdbcType="INTEGER"/>
+            <result property="vatdeclarationnumber" column="VATDeclarationNumber" jdbcType="VARCHAR"/>
+            <result property="currentvatdeclarationperiod" column="CurrentVATDeclarationPeriod" jdbcType="DATE"/>
+            <result property="vatdeclarationcycle" column="VATDeclarationCycle" jdbcType="VARCHAR"/>
+            <result property="applicabletaxrate" column="ApplicableTaxRate" jdbcType="DECIMAL"/>
+            <result property="taxpaymentdeadline" column="TaxPaymentDeadline" jdbcType="DATE"/>
+            <result property="salesreportuploadplatform" column="SalesReportUploadPlatform" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        DeclarationDetailID,DeclarationID,VATDeclarationNumber,
+        CurrentVATDeclarationPeriod,VATDeclarationCycle,ApplicableTaxRate,
+        TaxPaymentDeadline,SalesReportUploadPlatform
+    </sql>
+</mapper>

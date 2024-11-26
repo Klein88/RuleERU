@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.Privacy.PrivacyActivity_1">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/Tl_privacy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navigationIcon="@drawable/ic_nav_back"
+        app:title="  ">
+    </androidx.appcompat.widget.Toolbar>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="    数据处理活动是否基于国际公法而适用欧盟成员国法律？"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tl_privacy" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:text="     数据控制者在欧盟境内没有营业活动(Establishment)，但根据国际公法：1）某国的使领馆区域被认为是该国领土的自然延伸，2）公海上悬挂某国国旗的船只上的活动受到该国法律管辖；在上述场景下，即使数据处理行为不满足GDPR第3和2的条件，但因上述国际公法规则的存在，相关数据处理活动将仍受GDPR的管辖。"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        android:gravity="center">
+
+        <android.widget.Button
+            android:id="@+id/btn_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#3b80f7"
+            android:background="@null"/>
+
+        <android.widget.Button
+            android:id="@+id/btn_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="否"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#3b80f7"
+            android:background="@null"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

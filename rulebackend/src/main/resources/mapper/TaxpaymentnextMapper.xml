@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="web.rulemanage.mapper.TaxpaymentnextMapper">
+
+    <resultMap id="BaseResultMap" type="web.rulemanage.domain.Taxpaymentnext">
+            <id property="taxpaymentnextid" column="TaxPaymentNextID" jdbcType="INTEGER"/>
+            <result property="vatnumber" column="VATNumber" jdbcType="VARCHAR"/>
+            <result property="salesplatform" column="SalesPlatform" jdbcType="VARCHAR"/>
+            <result property="taxablesales" column="TaxableSales" jdbcType="DECIMAL"/>
+            <result property="taxrate" column="TaxRate" jdbcType="DECIMAL"/>
+            <result property="taxamount" column="TaxAmount" jdbcType="DECIMAL"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        TaxPaymentNextID,VATNumber,SalesPlatform,
+        TaxableSales,TaxRate,TaxAmount
+    </sql>
+</mapper>

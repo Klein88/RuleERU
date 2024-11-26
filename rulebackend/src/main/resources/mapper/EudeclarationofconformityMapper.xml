@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="web.rulemanage.mapper.EudeclarationofconformityMapper">
+
+    <resultMap id="BaseResultMap" type="web.rulemanage.domain.Eudeclarationofconformity">
+            <id property="declarationid" column="DeclarationID" jdbcType="INTEGER"/>
+            <result property="manufacturername" column="ManufacturerName" jdbcType="VARCHAR"/>
+            <result property="businessaddress" column="BusinessAddress" jdbcType="VARCHAR"/>
+            <result property="authorizedrepresentative" column="AuthorizedRepresentative" jdbcType="VARCHAR"/>
+            <result property="productserialnumber" column="ProductSerialNumber" jdbcType="VARCHAR"/>
+            <result property="modelortypeidentification" column="ModelOrTypeIdentification" jdbcType="VARCHAR"/>
+            <result property="responsibilitystatement" column="ResponsibilityStatement" jdbcType="VARCHAR"/>
+            <result property="productidentification" column="ProductIdentification" jdbcType="VARCHAR"/>
+            <result property="notifiedbodydetails" column="NotifiedBodyDetails" jdbcType="VARCHAR"/>
+            <result property="legislationandstandards" column="LegislationAndStandards" jdbcType="VARCHAR"/>
+            <result property="signatoryname" column="SignatoryName" jdbcType="VARCHAR"/>
+            <result property="declarationdate" column="DeclarationDate" jdbcType="DATE"/>
+            <result property="supplementaryinformation" column="SupplementaryInformation" jdbcType="VARCHAR"/>
+            <result property="importerresponsibility" column="ImporterResponsibility" jdbcType="VARCHAR"/>
+            <result property="translationrequirement" column="TranslationRequirement" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        DeclarationID,ManufacturerName,BusinessAddress,
+        AuthorizedRepresentative,ProductSerialNumber,ModelOrTypeIdentification,
+        ResponsibilityStatement,ProductIdentification,NotifiedBodyDetails,
+        LegislationAndStandards,SignatoryName,DeclarationDate,
+        SupplementaryInformation,ImporterResponsibility,TranslationRequirement,
+        SignatorySignature,ProductImage
+    </sql>
+</mapper>

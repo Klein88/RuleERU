@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="web.rulemanage.mapper.PersonalinfoMapper">
+
+    <resultMap id="BaseResultMap" type="web.rulemanage.domain.Personalinfo">
+            <id property="userid" column="UserID" jdbcType="INTEGER"/>
+            <result property="personalname" column="PersonalName" jdbcType="VARCHAR"/>
+            <result property="personaltel" column="PersonalTel" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        UserID,PersonalName,PersonalTel
+    </sql>
+</mapper>

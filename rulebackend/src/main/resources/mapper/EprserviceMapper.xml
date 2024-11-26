@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="web.rulemanage.mapper.EprserviceMapper">
+
+    <resultMap id="BaseResultMap" type="web.rulemanage.domain.Eprservice">
+            <id property="eprserviceid" column="EPRServiceID" jdbcType="INTEGER"/>
+            <result property="companyname" column="CompanyName" jdbcType="VARCHAR"/>
+            <result property="registrationnumber" column="RegistrationNumber" jdbcType="VARCHAR"/>
+            <result property="country" column="Country" jdbcType="VARCHAR"/>
+            <result property="servicetype" column="ServiceType" jdbcType="VARCHAR"/>
+            <result property="servicesummit" column="ServiceSummit" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        EPRServiceID,CompanyName,RegistrationNumber,
+        Country,ServiceType,ServiceSummit
+    </sql>
+</mapper>

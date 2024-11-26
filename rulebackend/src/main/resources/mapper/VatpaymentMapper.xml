@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="web.rulemanage.mapper.VatpaymentMapper">
+
+    <resultMap id="BaseResultMap" type="web.rulemanage.domain.Vatpayment">
+            <id property="vatpaymentid" column="VatPaymentID" jdbcType="VARCHAR"/>
+            <result property="taxNumber" column="tax_number" jdbcType="VARCHAR"/>
+            <result property="paymentAmount" column="payment_amount" jdbcType="DECIMAL"/>
+            <result property="paymentMethod" column="payment_method" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="VARCHAR"/>
+            <result property="additionalInfo" column="additional_info" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        VatPaymentID,tax_number,payment_amount,
+        payment_method,status,additional_info
+    </sql>
+    <select id="selectById" resultType="web.rulemanage.domain.Vatpayment"></select>
+</mapper>

@@ -1,0 +1,1812 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6D231CDCE8232DE55B7A2A1F /* Pods_rule_apple_demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE5486EF928CCFF46CA3B962 /* Pods_rule_apple_demo.framework */; };
+		7DF73956C4814205B8138890 /* Pods_rule_apple_demoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F3EA4D8F2D111C912FC4E4A /* Pods_rule_apple_demoTests.framework */; };
+		D97AE9DDC48D8E2B61BEBE42 /* Pods_rule_apple_demo_rule_apple_demoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2683AC6CF269B879B3CD3E4E /* Pods_rule_apple_demo_rule_apple_demoUITests.framework */; };
+		DF16D98E2AF324CA0057E137 /* TaxPaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF16D98D2AF324CA0057E137 /* TaxPaymentView.swift */; };
+		DF16D9902AF325270057E137 /* TaxPaymentView_One.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF16D98F2AF325270057E137 /* TaxPaymentView_One.swift */; };
+		DF16D9922AF325310057E137 /* TaxPaymentView_List.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF16D9912AF325310057E137 /* TaxPaymentView_List.swift */; };
+		DF16D9942AF328DE0057E137 /* TaxpaymentRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF16D9932AF328DE0057E137 /* TaxpaymentRequestAPI.swift */; };
+		DF16D9962AF328F70057E137 /* TaxpaymentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF16D9952AF328F70057E137 /* TaxpaymentRequest.swift */; };
+		DF16D9982AF337110057E137 /* TaxPaymentView_Edit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF16D9972AF337110057E137 /* TaxPaymentView_Edit.swift */; };
+		DF1C26A92AF21BEB00E2F261 /* TranslateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1C26A82AF21BEB00E2F261 /* TranslateView.swift */; };
+		DF1C26AC2AF21F1B00E2F261 /* TranslateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1C26AB2AF21F1B00E2F261 /* TranslateViewController.swift */; };
+		DF1C26B02AF2238A00E2F261 /* TranslateViewControllerToSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF1C26AF2AF2238A00E2F261 /* TranslateViewControllerToSwiftUI.swift */; };
+		DF2015EB2B00A82A00110D2F /* Pages in Frameworks */ = {isa = PBXBuildFile; productRef = DF2015EA2B00A82A00110D2F /* Pages */; };
+		DF25C8BE2AF9EB79006C7AD3 /* CultivateView_Introduction_Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF25C8BD2AF9EB79006C7AD3 /* CultivateView_Introduction_Product.swift */; };
+		DF25C8C12AFB6103006C7AD3 /* StepperView in Frameworks */ = {isa = PBXBuildFile; productRef = DF25C8C02AFB6103006C7AD3 /* StepperView */; };
+		DF25C8C32AFB6BDA006C7AD3 /* CultivateView_VATDeclarationProcess.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF25C8C22AFB6BD9006C7AD3 /* CultivateView_VATDeclarationProcess.swift */; };
+		DF25C8C62AFB70FD006C7AD3 /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = DF25C8C52AFB70FD006C7AD3 /* SwiftUICharts */; };
+		DF299CDB2ADBFFF300806482 /* TabBar in Frameworks */ = {isa = PBXBuildFile; productRef = DF299CDA2ADBFFF300806482 /* TabBar */; };
+		DF299CDE2ADC489E00806482 /* WorkOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF299CDD2ADC489E00806482 /* WorkOrderView.swift */; };
+		DF299CE02ADC491100806482 /* WorkOrder_One_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF299CDF2ADC491100806482 /* WorkOrder_One_View.swift */; };
+		DF299CE22ADC491F00806482 /* WorkOrder_List_View.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF299CE12ADC491F00806482 /* WorkOrder_List_View.swift */; };
+		DF299CEF2ADD127F00806482 /* SlideOverCard in Frameworks */ = {isa = PBXBuildFile; productRef = DF299CEE2ADD127F00806482 /* SlideOverCard */; };
+		DF299CF22ADD16A800806482 /* AgencyServiceInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF299CF12ADD16A800806482 /* AgencyServiceInformationView.swift */; };
+		DF299CF42ADD191B00806482 /* AgencyServiceInformationView_VAT.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF299CF32ADD191B00806482 /* AgencyServiceInformationView_VAT.swift */; };
+		DF299CF72ADD2B6400806482 /* AgencyServiceInformationViewAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF299CF62ADD2B6400806482 /* AgencyServiceInformationViewAPI.swift */; };
+		DF2E770B2AE0B0BB004F24E0 /* AgencyServiceInformationView_Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2E770A2AE0B0BB004F24E0 /* AgencyServiceInformationView_Shop.swift */; };
+		DF2E770E2AE0C4A1004F24E0 /* VATDeclarationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2E770D2AE0C4A1004F24E0 /* VATDeclarationView.swift */; };
+		DF2E77112AE0D199004F24E0 /* VATDeclarationViewAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2E77102AE0D199004F24E0 /* VATDeclarationViewAPI.swift */; };
+		DF2E77132AE24F02004F24E0 /* VATDclarationView_Finish.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2E77122AE24F02004F24E0 /* VATDclarationView_Finish.swift */; };
+		DF2E77162AE26546004F24E0 /* VATView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2E77152AE26546004F24E0 /* VATView.swift */; };
+		DF2E77192AE27263004F24E0 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF2E77182AE27263004F24E0 /* WebView.swift */; };
+		DF3486412AF0828A006974D7 /* EPRdeclarationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3486402AF0828A006974D7 /* EPRdeclarationView.swift */; };
+		DF3486432AF08493006974D7 /* TaxrefundRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3486422AF08493006974D7 /* TaxrefundRequestAPI.swift */; };
+		DF3486452AF084A5006974D7 /* TaxrefundRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3486442AF084A5006974D7 /* TaxrefundRequest.swift */; };
+		DF3486472AF0874D006974D7 /* EPRdeclatationView_List.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3486462AF0874D006974D7 /* EPRdeclatationView_List.swift */; };
+		DF3486492AF0875B006974D7 /* EPRdeclarationView_One.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF3486482AF0875B006974D7 /* EPRdeclarationView_One.swift */; };
+		DF48CACD2AE9FF230093DC4B /* InformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF48CACC2AE9FF230093DC4B /* InformationView.swift */; };
+		DF48CAD02AE9FF6E0093DC4B /* CultivateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF48CACF2AE9FF6E0093DC4B /* CultivateView.swift */; };
+		DF48CAD32AEA06370093DC4B /* DeclarationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF48CAD22AEA06370093DC4B /* DeclarationView.swift */; };
+		DF48CAD52AEA06F50093DC4B /* DeclarationView_One.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF48CAD42AEA06F50093DC4B /* DeclarationView_One.swift */; };
+		DF48CAD72AEA07060093DC4B /* DeclarationView_List.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF48CAD62AEA07060093DC4B /* DeclarationView_List.swift */; };
+		DF5540A12B22325400EEC440 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5540A02B22325400EEC440 /* BaseURL.swift */; };
+		DF5A69392ADE0B62009AB044 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5A69382ADE0B62009AB044 /* ImagePicker.swift */; };
+		DF5A693B2ADE0CA9009AB044 /* DocumentUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5A693A2ADE0CA9009AB044 /* DocumentUpView.swift */; };
+		DF5A693D2ADE1611009AB044 /* AgencyServiceInformationView_Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF5A693C2ADE1611009AB044 /* AgencyServiceInformationView_Company.swift */; };
+		DF62D4BC2ADE368800E73E21 /* AgencyServiceInformationView_Legal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF62D4BB2ADE368800E73E21 /* AgencyServiceInformationView_Legal.swift */; };
+		DF6308EF2B00F74C00FC43EB /* ConsumptionView_One.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6308EE2B00F74C00FC43EB /* ConsumptionView_One.swift */; };
+		DF6308F12B00F76D00FC43EB /* ConsumptionView_List.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6308F02B00F76D00FC43EB /* ConsumptionView_List.swift */; };
+		DF6308F32B00F90100FC43EB /* ConsumptionView_Edit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6308F22B00F90100FC43EB /* ConsumptionView_Edit.swift */; };
+		DF6308F52B01019600FC43EB /* ConsumptionView_Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6308F42B01019600FC43EB /* ConsumptionView_Add.swift */; };
+		DF6308F82B0117BD00FC43EB /* Tips.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6308F72B0117BD00FC43EB /* Tips.swift */; };
+		DF6308FC2B01E9F900FC43EB /* ConsumptionView_Search_List.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6308FB2B01E9F900FC43EB /* ConsumptionView_Search_List.swift */; };
+		DF6308FE2B01EA0700FC43EB /* ConsumptionView_Search_One.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6308FD2B01EA0700FC43EB /* ConsumptionView_Search_One.swift */; };
+		DF6309002B01EEA400FC43EB /* CultivateView_Law_VAT.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6308FF2B01EEA400FC43EB /* CultivateView_Law_VAT.swift */; };
+		DF6309022B01EEB600FC43EB /* CultivateView_Law_EPR.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6309012B01EEB600FC43EB /* CultivateView_Law_EPR.swift */; };
+		DF6309062B01F7F800FC43EB /* ThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6309032B01F7F800FC43EB /* ThumbnailView.swift */; };
+		DF6309072B01F7F800FC43EB /* ExpandedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6309042B01F7F800FC43EB /* ExpandedView.swift */; };
+		DF6309082B01F7F800FC43EB /* ExpandableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6309052B01F7F800FC43EB /* ExpandableView.swift */; };
+		DF63090A2B02017F00FC43EB /* CultivateView_Other.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6309092B02017F00FC43EB /* CultivateView_Other.swift */; };
+		DF63090E2B021DA000FC43EB /* BaiduTranslateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF63090D2B021DA000FC43EB /* BaiduTranslateView.swift */; };
+		DF6309112B02291500FC43EB /* CultivateView_market.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6309102B02291500FC43EB /* CultivateView_market.swift */; };
+		DF6309132B02454300FC43EB /* DeclarationView_Document.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6309122B02454300FC43EB /* DeclarationView_Document.swift */; };
+		DF6309152B024B5100FC43EB /* VATDocumentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6309142B024B5100FC43EB /* VATDocumentViewModel.swift */; };
+		DF6309172B026C4400FC43EB /* UserView_Information.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6309162B026C4400FC43EB /* UserView_Information.swift */; };
+		DF6309192B0270E300FC43EB /* UserView_Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6309182B0270E300FC43EB /* UserView_Company.swift */; };
+		DF63091B2B02FAB300FC43EB /* LoginView_Regisiter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF63091A2B02FAB300FC43EB /* LoginView_Regisiter.swift */; };
+		DF63091D2B03184800FC43EB /* EPRDocumentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF63091C2B03184800FC43EB /* EPRDocumentViewModel.swift */; };
+		DF63091F2B03186100FC43EB /* ConsumptionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF63091E2B03186100FC43EB /* ConsumptionViewModel.swift */; };
+		DF664E402AE511430069B7BF /* PrivacyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF664E3F2AE511430069B7BF /* PrivacyView.swift */; };
+		DF664E422AE5178E0069B7BF /* DetermineAdministertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF664E412AE5178E0069B7BF /* DetermineAdministertView.swift */; };
+		DF664E442AE527CE0069B7BF /* ComplianceAndSafetyInspectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF664E432AE527CE0069B7BF /* ComplianceAndSafetyInspectionView.swift */; };
+		DF664E462AE52AF30069B7BF /* LawSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF664E452AE52AF30069B7BF /* LawSearchView.swift */; };
+		DF674F852AEE2CC90099DA0C /* TaxpaymentnextAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF674F842AEE2CC90099DA0C /* TaxpaymentnextAPI.swift */; };
+		DF674F872AEE2CF40099DA0C /* TaxpaymentnextRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF674F862AEE2CF40099DA0C /* TaxpaymentnextRequest.swift */; };
+		DF674F8A2AEE39200099DA0C /* EPRView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF674F892AEE39200099DA0C /* EPRView.swift */; };
+		DF674F8C2AEE3AD40099DA0C /* EprdeclarationRequest_1API.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF674F8B2AEE3AD40099DA0C /* EprdeclarationRequest_1API.swift */; };
+		DF674F8E2AEE3AF30099DA0C /* EprdeclarationRequest_1.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF674F8D2AEE3AF30099DA0C /* EprdeclarationRequest_1.swift */; };
+		DF674F902AEE3F720099DA0C /* EprserviceRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF674F8F2AEE3F720099DA0C /* EprserviceRequestAPI.swift */; };
+		DF674F922AEE3F7E0099DA0C /* EprserviceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF674F912AEE3F7E0099DA0C /* EprserviceRequest.swift */; };
+		DF674F952AEE44B30099DA0C /* EPRServiceView_One.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF674F942AEE44B30099DA0C /* EPRServiceView_One.swift */; };
+		DF674F972AEE44BF0099DA0C /* EPRServiceView_List.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF674F962AEE44BF0099DA0C /* EPRServiceView_List.swift */; };
+		DF674F992AEE44CF0099DA0C /* addEPRServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF674F982AEE44CF0099DA0C /* addEPRServiceView.swift */; };
+		DF674F9D2AEE455F0099DA0C /* EPRServiceInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF674F9C2AEE455F0099DA0C /* EPRServiceInformationView.swift */; };
+		DF674FA02AEF47880099DA0C /* EPRAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF674F9F2AEF47880099DA0C /* EPRAPI.swift */; };
+		DF674FA22AEF79960099DA0C /* EPRServiceInformationView_Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF674FA12AEF79960099DA0C /* EPRServiceInformationView_Company.swift */; };
+		DF674FA42AEF79A00099DA0C /* EPRServiceInformationView_Legal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF674FA32AEF79A00099DA0C /* EPRServiceInformationView_Legal.swift */; };
+		DF674FA62AEF79AA0099DA0C /* EPRServiceInformationView_Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF674FA52AEF79AA0099DA0C /* EPRServiceInformationView_Shop.swift */; };
+		DF6D87432AF7698800D3D87D /* CreateViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6D87422AF7698800D3D87D /* CreateViewModifier.swift */; };
+		DF6D87462AF76B6600D3D87D /* VATPaymentRefundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6D87452AF76B6600D3D87D /* VATPaymentRefundView.swift */; };
+		DF6D87492AF770F800D3D87D /* PackagingSummaryDeclarationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6D87482AF770F800D3D87D /* PackagingSummaryDeclarationView.swift */; };
+		DF6D874B2AF779DB00D3D87D /* packagingSummaryDeclarationSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6D874A2AF779DB00D3D87D /* packagingSummaryDeclarationSearchView.swift */; };
+		DF735E3B2AE610DC00242448 /* Abolish.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF735E3A2AE610DC00242448 /* Abolish.swift */; };
+		DF735E3E2AE63E0C00242448 /* FileUpload.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF735E3D2AE63E0C00242448 /* FileUpload.swift */; };
+		DF7A9C4A2ADA5ADD00DA1C9B /* CompanyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7A9C492ADA5ADD00DA1C9B /* CompanyRequest.swift */; };
+		DF7A9C4D2ADA659200DA1C9B /* ExampleJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7A9C4C2ADA659200DA1C9B /* ExampleJSON.swift */; };
+		DF7A9C502ADA66C600DA1C9B /* CompanyRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7A9C4F2ADA66C600DA1C9B /* CompanyRequestAPI.swift */; };
+		DF7A9C532ADA71C800DA1C9B /* CompanyinfoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7A9C522ADA71C800DA1C9B /* CompanyinfoRequest.swift */; };
+		DF7A9C552ADA71EC00DA1C9B /* CompanyinfoRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7A9C542ADA71EC00DA1C9B /* CompanyinfoRequestAPI.swift */; };
+		DF7A9C5A2ADA7EC800DA1C9B /* ProductRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7A9C592ADA7EC800DA1C9B /* ProductRequest.swift */; };
+		DF7A9C5C2ADA7F1200DA1C9B /* ProductRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7A9C5B2ADA7F1200DA1C9B /* ProductRequestAPI.swift */; };
+		DF7A9C5E2ADA864600DA1C9B /* TodoRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7A9C5D2ADA864600DA1C9B /* TodoRequestAPI.swift */; };
+		DF7A9C602ADA865D00DA1C9B /* TodoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7A9C5F2ADA865D00DA1C9B /* TodoRequest.swift */; };
+		DF7A9C622ADA8A6C00DA1C9B /* WorkorderRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7A9C612ADA8A6C00DA1C9B /* WorkorderRequestAPI.swift */; };
+		DF7A9C642ADA8A7F00DA1C9B /* WorkorderRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7A9C632ADA8A7F00DA1C9B /* WorkorderRequest.swift */; };
+		DF801F842AD787590096DFCF /* rule_apple_demoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF801F832AD787590096DFCF /* rule_apple_demoApp.swift */; };
+		DF801F862AD787590096DFCF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF801F852AD787590096DFCF /* ContentView.swift */; };
+		DF801F882AD7875A0096DFCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF801F872AD7875A0096DFCF /* Assets.xcassets */; };
+		DF801F8B2AD7875A0096DFCF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF801F8A2AD7875A0096DFCF /* Preview Assets.xcassets */; };
+		DF801F952AD7875A0096DFCF /* rule_apple_demoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF801F942AD7875A0096DFCF /* rule_apple_demoTests.swift */; };
+		DF801F9F2AD7875A0096DFCF /* rule_apple_demoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF801F9E2AD7875A0096DFCF /* rule_apple_demoUITests.swift */; };
+		DF801FA12AD7875A0096DFCF /* rule_apple_demoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF801FA02AD7875A0096DFCF /* rule_apple_demoUITestsLaunchTests.swift */; };
+		DFA9C0DC2B1073750032BD27 /* VATPaymentRefundView_One.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA9C0DB2B1073750032BD27 /* VATPaymentRefundView_One.swift */; };
+		DFA9C0DE2B1073860032BD27 /* VATPaymentRefundView_List.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFA9C0DD2B1073860032BD27 /* VATPaymentRefundView_List.swift */; };
+		DFAA5B252B074155005181D6 /* InformationView_Charts.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAA5B242B074155005181D6 /* InformationView_Charts.swift */; };
+		DFAA5B282B074E48005181D6 /* ImportByFoodAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAA5B272B074E47005181D6 /* ImportByFoodAPI.swift */; };
+		DFAA5B2A2B074E5D005181D6 /* ImportByJixieAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAA5B292B074E5D005181D6 /* ImportByJixieAPI.swift */; };
+		DFAA5B2C2B074E6B005181D6 /* ImportByHuaxuepinAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAA5B2B2B074E6B005181D6 /* ImportByHuaxuepinAPI.swift */; };
+		DFAA5B2E2B074E80005181D6 /* ImportByYuancailiaoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAA5B2D2B074E80005181D6 /* ImportByYuancailiaoAPI.swift */; };
+		DFAA5B302B074EB0005181D6 /* ImportRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAA5B2F2B074EB0005181D6 /* ImportRequest.swift */; };
+		DFAFD0702AFC69430049270B /* CultivateView_Declaration.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAFD06F2AFC69430049270B /* CultivateView_Declaration.swift */; };
+		DFAFD0732AFC6F8A0049270B /* RobotMessageAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAFD0722AFC6F8A0049270B /* RobotMessageAPI.swift */; };
+		DFAFD0772AFE21210049270B /* CultivateView_Information_One.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAFD0762AFE21210049270B /* CultivateView_Information_One.swift */; };
+		DFAFD0792AFE212D0049270B /* CultivateView_Information_List.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAFD0782AFE212D0049270B /* CultivateView_Information_List.swift */; };
+		DFAFD07D2AFE23380049270B /* CultivateView_Information_Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAFD07C2AFE23380049270B /* CultivateView_Information_Data.swift */; };
+		DFAFD07F2AFE290E0049270B /* CultivateView_Search_Finish.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAFD07E2AFE290E0049270B /* CultivateView_Search_Finish.swift */; };
+		DFAFD0822AFE35EB0049270B /* Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAFD0812AFE35EB0049270B /* Random.swift */; };
+		DFAFD0852AFE3B910049270B /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAFD0842AFE3B910049270B /* Data.swift */; };
+		DFAFD0872B00945E0049270B /* CultivateView_Law.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAFD0862B00945E0049270B /* CultivateView_Law.swift */; };
+		DFB252F12AF885AA00FC07D3 /* EudeclarationofconformityRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB252F02AF885AA00FC07D3 /* EudeclarationofconformityRequestAPI.swift */; };
+		DFB252F32AF885BA00FC07D3 /* EudeclarationofconformityRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB252F22AF885BA00FC07D3 /* EudeclarationofconformityRequest.swift */; };
+		DFB252F52AF88BAF00FC07D3 /* Consumption.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB252F42AF88BAF00FC07D3 /* Consumption.swift */; };
+		DFB252F72AF88BF000FC07D3 /* ComplianceapplicationRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB252F62AF88BF000FC07D3 /* ComplianceapplicationRequestAPI.swift */; };
+		DFB252F92AF88BFB00FC07D3 /* ComplianceapplicationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB252F82AF88BFB00FC07D3 /* ComplianceapplicationRequest.swift */; };
+		DFB3A5242AF0A7BD00B7212E /* TranslateAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFB3A5232AF0A7BD00B7212E /* TranslateAPI.swift */; };
+		DFC046822ADBBC7F00C12FA2 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC046812ADBBC7F00C12FA2 /* HomeView.swift */; };
+		DFC046872ADBC0B600C12FA2 /* TestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC046862ADBC0B600C12FA2 /* TestView.swift */; };
+		DFC0468C2ADBCC3000C12FA2 /* TabLayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC0468B2ADBCC3000C12FA2 /* TabLayoutView.swift */; };
+		DFC0468E2ADBCFA900C12FA2 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC0468D2ADBCFA900C12FA2 /* LoginView.swift */; };
+		DFC046902ADBD2EA00C12FA2 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC0468F2ADBD2EA00C12FA2 /* UserViewModel.swift */; };
+		DFC046942ADBD6D100C12FA2 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC046932ADBD6D100C12FA2 /* UserView.swift */; };
+		DFC99FDB2AF9D07B005C6CD7 /* CultivateView_Introduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC99FDA2AF9D07B005C6CD7 /* CultivateView_Introduction.swift */; };
+		DFC99FDD2AF9D63D005C6CD7 /* CultivateView_Introduction_EPR.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFC99FDC2AF9D63D005C6CD7 /* CultivateView_Introduction_EPR.swift */; };
+		DFE41F3F2AE68C8E004D6689 /* AgencyServiceInformationView_add_success.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE41F3E2AE68C8E004D6689 /* AgencyServiceInformationView_add_success.swift */; };
+		DFE41F422AE69D56004D6689 /* AgencyServiceInformationView_Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE41F412AE69D56004D6689 /* AgencyServiceInformationView_Table.swift */; };
+		DFE41F452AE6BF02004D6689 /* PackagingSummaryDeclarationRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE41F442AE6BF02004D6689 /* PackagingSummaryDeclarationRequestAPI.swift */; };
+		DFE41F472AE6BF63004D6689 /* PackagingSummaryDeclarationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE41F462AE6BF63004D6689 /* PackagingSummaryDeclarationRequest.swift */; };
+		DFE41F492AE6C55E004D6689 /* TaxServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE41F482AE6C55E004D6689 /* TaxServiceRequest.swift */; };
+		DFE41F4B2AE6C681004D6689 /* TaxServiceRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE41F4A2AE6C681004D6689 /* TaxServiceRequestAPI.swift */; };
+		DFE41F4D2AE6C7CB004D6689 /* EprregistrationserviceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE41F4C2AE6C7CB004D6689 /* EprregistrationserviceRequest.swift */; };
+		DFE41F4F2AE6C850004D6689 /* EprregistrationserviceRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE41F4E2AE6C850004D6689 /* EprregistrationserviceRequestAPI.swift */; };
+		DFE41F512AE6C972004D6689 /* EprregistrationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE41F502AE6C972004D6689 /* EprregistrationRequest.swift */; };
+		DFE41F532AE6CAE5004D6689 /* EprregistrationRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE41F522AE6CAE5004D6689 /* EprregistrationRequestAPI.swift */; };
+		DFE41F552AE6CCA5004D6689 /* EprdeclarationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE41F542AE6CCA5004D6689 /* EprdeclarationRequest.swift */; };
+		DFE41F572AE6D2C5004D6689 /* EprdeclarationRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE41F562AE6D2C5004D6689 /* EprdeclarationRequestAPI.swift */; };
+		DFE41F592AE6D4BD004D6689 /* VatpaymentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE41F582AE6D4BD004D6689 /* VatpaymentRequest.swift */; };
+		DFE41F5B2AE6D512004D6689 /* DocumentRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE41F5A2AE6D512004D6689 /* DocumentRequest.swift */; };
+		DFE41F5D2AE6D70D004D6689 /* VATView_List.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE41F5C2AE6D70D004D6689 /* VATView_List.swift */; };
+		DFE41F5F2AE6D71A004D6689 /* VATView_One.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE41F5E2AE6D71A004D6689 /* VATView_One.swift */; };
+		DFE41F612AE6E0AD004D6689 /* addVATServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFE41F602AE6E0AD004D6689 /* addVATServiceView.swift */; };
+		DFF429B32ADBA0AE008491EF /* LocaltaxpolicyRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF429B22ADBA0AE008491EF /* LocaltaxpolicyRequestAPI.swift */; };
+		DFF429B52ADBA0B8008491EF /* LocaltaxpolicyRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF429B42ADBA0B8008491EF /* LocaltaxpolicyRequest.swift */; };
+		DFF429B72ADBA39A008491EF /* TaxdeclarationRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF429B62ADBA39A008491EF /* TaxdeclarationRequestAPI.swift */; };
+		DFF429B92ADBA3A8008491EF /* TaxdeclarationRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF429B82ADBA3A8008491EF /* TaxdeclarationRequest.swift */; };
+		DFF429BB2ADBAA46008491EF /* UserRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF429BA2ADBAA46008491EF /* UserRequestAPI.swift */; };
+		DFF429BD2ADBAA50008491EF /* UserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF429BC2ADBAA50008491EF /* UserRequest.swift */; };
+		DFF429BF2ADBAC78008491EF /* VatdeclarationdetailsRequestAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF429BE2ADBAC78008491EF /* VatdeclarationdetailsRequestAPI.swift */; };
+		DFF429C12ADBAC86008491EF /* VatdeclarationdetailsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFF429C02ADBAC86008491EF /* VatdeclarationdetailsRequest.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DF801F912AD7875A0096DFCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF801F782AD787580096DFCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF801F7F2AD787580096DFCF;
+			remoteInfo = rule_apple_demo;
+		};
+		DF801F9B2AD7875A0096DFCF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DF801F782AD787580096DFCF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DF801F7F2AD787580096DFCF;
+			remoteInfo = rule_apple_demo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08CC911BD023198F7AD39D12 /* Pods-rule_apple_demo-rule_apple_demoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rule_apple_demo-rule_apple_demoUITests.debug.xcconfig"; path = "Target Support Files/Pods-rule_apple_demo-rule_apple_demoUITests/Pods-rule_apple_demo-rule_apple_demoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2683AC6CF269B879B3CD3E4E /* Pods_rule_apple_demo_rule_apple_demoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rule_apple_demo_rule_apple_demoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CBEA73AD18A8EA79B9D3C07 /* Pods-rule_apple_demoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rule_apple_demoTests.release.xcconfig"; path = "Target Support Files/Pods-rule_apple_demoTests/Pods-rule_apple_demoTests.release.xcconfig"; sourceTree = "<group>"; };
+		5F3EA4D8F2D111C912FC4E4A /* Pods_rule_apple_demoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rule_apple_demoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CC03DFD635CCC161E0687C6 /* Pods-rule_apple_demoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rule_apple_demoTests.debug.xcconfig"; path = "Target Support Files/Pods-rule_apple_demoTests/Pods-rule_apple_demoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		723AC100C56ACB0D82FF1DA2 /* Pods-rule_apple_demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rule_apple_demo.release.xcconfig"; path = "Target Support Files/Pods-rule_apple_demo/Pods-rule_apple_demo.release.xcconfig"; sourceTree = "<group>"; };
+		BE5486EF928CCFF46CA3B962 /* Pods_rule_apple_demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_rule_apple_demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D12B5DD36BB90F1AB4910042 /* Pods-rule_apple_demo-rule_apple_demoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rule_apple_demo-rule_apple_demoUITests.release.xcconfig"; path = "Target Support Files/Pods-rule_apple_demo-rule_apple_demoUITests/Pods-rule_apple_demo-rule_apple_demoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D7981B478AFF772C2B5154B7 /* Pods-rule_apple_demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rule_apple_demo.debug.xcconfig"; path = "Target Support Files/Pods-rule_apple_demo/Pods-rule_apple_demo.debug.xcconfig"; sourceTree = "<group>"; };
+		DF16D98D2AF324CA0057E137 /* TaxPaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxPaymentView.swift; sourceTree = "<group>"; };
+		DF16D98F2AF325270057E137 /* TaxPaymentView_One.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxPaymentView_One.swift; sourceTree = "<group>"; };
+		DF16D9912AF325310057E137 /* TaxPaymentView_List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxPaymentView_List.swift; sourceTree = "<group>"; };
+		DF16D9932AF328DE0057E137 /* TaxpaymentRequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxpaymentRequestAPI.swift; sourceTree = "<group>"; };
+		DF16D9952AF328F70057E137 /* TaxpaymentRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxpaymentRequest.swift; sourceTree = "<group>"; };
+		DF16D9972AF337110057E137 /* TaxPaymentView_Edit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxPaymentView_Edit.swift; sourceTree = "<group>"; };
+		DF1C26A82AF21BEB00E2F261 /* TranslateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateView.swift; sourceTree = "<group>"; };
+		DF1C26AB2AF21F1B00E2F261 /* TranslateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewController.swift; sourceTree = "<group>"; };
+		DF1C26AF2AF2238A00E2F261 /* TranslateViewControllerToSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateViewControllerToSwiftUI.swift; sourceTree = "<group>"; };
+		DF25C8BD2AF9EB79006C7AD3 /* CultivateView_Introduction_Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultivateView_Introduction_Product.swift; sourceTree = "<group>"; };
+		DF25C8C22AFB6BD9006C7AD3 /* CultivateView_VATDeclarationProcess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultivateView_VATDeclarationProcess.swift; sourceTree = "<group>"; };
+		DF299CDD2ADC489E00806482 /* WorkOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOrderView.swift; sourceTree = "<group>"; };
+		DF299CDF2ADC491100806482 /* WorkOrder_One_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOrder_One_View.swift; sourceTree = "<group>"; };
+		DF299CE12ADC491F00806482 /* WorkOrder_List_View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkOrder_List_View.swift; sourceTree = "<group>"; };
+		DF299CF12ADD16A800806482 /* AgencyServiceInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyServiceInformationView.swift; sourceTree = "<group>"; };
+		DF299CF32ADD191B00806482 /* AgencyServiceInformationView_VAT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyServiceInformationView_VAT.swift; sourceTree = "<group>"; };
+		DF299CF62ADD2B6400806482 /* AgencyServiceInformationViewAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyServiceInformationViewAPI.swift; sourceTree = "<group>"; };
+		DF2E770A2AE0B0BB004F24E0 /* AgencyServiceInformationView_Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyServiceInformationView_Shop.swift; sourceTree = "<group>"; };
+		DF2E770D2AE0C4A1004F24E0 /* VATDeclarationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VATDeclarationView.swift; sourceTree = "<group>"; };
+		DF2E77102AE0D199004F24E0 /* VATDeclarationViewAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VATDeclarationViewAPI.swift; sourceTree = "<group>"; };
+		DF2E77122AE24F02004F24E0 /* VATDclarationView_Finish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VATDclarationView_Finish.swift; sourceTree = "<group>"; };
+		DF2E77152AE26546004F24E0 /* VATView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VATView.swift; sourceTree = "<group>"; };
+		DF2E77182AE27263004F24E0 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		DF3486402AF0828A006974D7 /* EPRdeclarationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPRdeclarationView.swift; sourceTree = "<group>"; };
+		DF3486422AF08493006974D7 /* TaxrefundRequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxrefundRequestAPI.swift; sourceTree = "<group>"; };
+		DF3486442AF084A5006974D7 /* TaxrefundRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxrefundRequest.swift; sourceTree = "<group>"; };
+		DF3486462AF0874D006974D7 /* EPRdeclatationView_List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPRdeclatationView_List.swift; sourceTree = "<group>"; };
+		DF3486482AF0875B006974D7 /* EPRdeclarationView_One.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPRdeclarationView_One.swift; sourceTree = "<group>"; };
+		DF48CACC2AE9FF230093DC4B /* InformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView.swift; sourceTree = "<group>"; };
+		DF48CACF2AE9FF6E0093DC4B /* CultivateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultivateView.swift; sourceTree = "<group>"; };
+		DF48CAD22AEA06370093DC4B /* DeclarationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeclarationView.swift; sourceTree = "<group>"; };
+		DF48CAD42AEA06F50093DC4B /* DeclarationView_One.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeclarationView_One.swift; sourceTree = "<group>"; };
+		DF48CAD62AEA07060093DC4B /* DeclarationView_List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeclarationView_List.swift; sourceTree = "<group>"; };
+		DF5540A02B22325400EEC440 /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
+		DF5A69382ADE0B62009AB044 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		DF5A693A2ADE0CA9009AB044 /* DocumentUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentUpView.swift; sourceTree = "<group>"; };
+		DF5A693C2ADE1611009AB044 /* AgencyServiceInformationView_Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyServiceInformationView_Company.swift; sourceTree = "<group>"; };
+		DF62D4BA2ADE32BD00E73E21 /* rule-apple-demo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "rule-apple-demo-Info.plist"; sourceTree = SOURCE_ROOT; };
+		DF62D4BB2ADE368800E73E21 /* AgencyServiceInformationView_Legal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyServiceInformationView_Legal.swift; sourceTree = "<group>"; };
+		DF6308EE2B00F74C00FC43EB /* ConsumptionView_One.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumptionView_One.swift; sourceTree = "<group>"; };
+		DF6308F02B00F76D00FC43EB /* ConsumptionView_List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumptionView_List.swift; sourceTree = "<group>"; };
+		DF6308F22B00F90100FC43EB /* ConsumptionView_Edit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumptionView_Edit.swift; sourceTree = "<group>"; };
+		DF6308F42B01019600FC43EB /* ConsumptionView_Add.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumptionView_Add.swift; sourceTree = "<group>"; };
+		DF6308F72B0117BD00FC43EB /* Tips.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tips.swift; sourceTree = "<group>"; };
+		DF6308FB2B01E9F900FC43EB /* ConsumptionView_Search_List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumptionView_Search_List.swift; sourceTree = "<group>"; };
+		DF6308FD2B01EA0700FC43EB /* ConsumptionView_Search_One.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumptionView_Search_One.swift; sourceTree = "<group>"; };
+		DF6308FF2B01EEA400FC43EB /* CultivateView_Law_VAT.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultivateView_Law_VAT.swift; sourceTree = "<group>"; };
+		DF6309012B01EEB600FC43EB /* CultivateView_Law_EPR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultivateView_Law_EPR.swift; sourceTree = "<group>"; };
+		DF6309032B01F7F800FC43EB /* ThumbnailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThumbnailView.swift; sourceTree = "<group>"; };
+		DF6309042B01F7F800FC43EB /* ExpandedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandedView.swift; sourceTree = "<group>"; };
+		DF6309052B01F7F800FC43EB /* ExpandableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandableView.swift; sourceTree = "<group>"; };
+		DF6309092B02017F00FC43EB /* CultivateView_Other.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultivateView_Other.swift; sourceTree = "<group>"; };
+		DF63090D2B021DA000FC43EB /* BaiduTranslateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaiduTranslateView.swift; sourceTree = "<group>"; };
+		DF6309102B02291500FC43EB /* CultivateView_market.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultivateView_market.swift; sourceTree = "<group>"; };
+		DF6309122B02454300FC43EB /* DeclarationView_Document.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeclarationView_Document.swift; sourceTree = "<group>"; };
+		DF6309142B024B5100FC43EB /* VATDocumentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VATDocumentViewModel.swift; sourceTree = "<group>"; };
+		DF6309162B026C4400FC43EB /* UserView_Information.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView_Information.swift; sourceTree = "<group>"; };
+		DF6309182B0270E300FC43EB /* UserView_Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView_Company.swift; sourceTree = "<group>"; };
+		DF63091A2B02FAB300FC43EB /* LoginView_Regisiter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView_Regisiter.swift; sourceTree = "<group>"; };
+		DF63091C2B03184800FC43EB /* EPRDocumentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPRDocumentViewModel.swift; sourceTree = "<group>"; };
+		DF63091E2B03186100FC43EB /* ConsumptionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsumptionViewModel.swift; sourceTree = "<group>"; };
+		DF664E3F2AE511430069B7BF /* PrivacyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyView.swift; sourceTree = "<group>"; };
+		DF664E412AE5178E0069B7BF /* DetermineAdministertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetermineAdministertView.swift; sourceTree = "<group>"; };
+		DF664E432AE527CE0069B7BF /* ComplianceAndSafetyInspectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplianceAndSafetyInspectionView.swift; sourceTree = "<group>"; };
+		DF664E452AE52AF30069B7BF /* LawSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LawSearchView.swift; sourceTree = "<group>"; };
+		DF674F842AEE2CC90099DA0C /* TaxpaymentnextAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxpaymentnextAPI.swift; sourceTree = "<group>"; };
+		DF674F862AEE2CF40099DA0C /* TaxpaymentnextRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxpaymentnextRequest.swift; sourceTree = "<group>"; };
+		DF674F892AEE39200099DA0C /* EPRView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPRView.swift; sourceTree = "<group>"; };
+		DF674F8B2AEE3AD40099DA0C /* EprdeclarationRequest_1API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EprdeclarationRequest_1API.swift; sourceTree = "<group>"; };
+		DF674F8D2AEE3AF30099DA0C /* EprdeclarationRequest_1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EprdeclarationRequest_1.swift; sourceTree = "<group>"; };
+		DF674F8F2AEE3F720099DA0C /* EprserviceRequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EprserviceRequestAPI.swift; sourceTree = "<group>"; };
+		DF674F912AEE3F7E0099DA0C /* EprserviceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EprserviceRequest.swift; sourceTree = "<group>"; };
+		DF674F942AEE44B30099DA0C /* EPRServiceView_One.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPRServiceView_One.swift; sourceTree = "<group>"; };
+		DF674F962AEE44BF0099DA0C /* EPRServiceView_List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPRServiceView_List.swift; sourceTree = "<group>"; };
+		DF674F982AEE44CF0099DA0C /* addEPRServiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addEPRServiceView.swift; sourceTree = "<group>"; };
+		DF674F9C2AEE455F0099DA0C /* EPRServiceInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPRServiceInformationView.swift; sourceTree = "<group>"; };
+		DF674F9F2AEF47880099DA0C /* EPRAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPRAPI.swift; sourceTree = "<group>"; };
+		DF674FA12AEF79960099DA0C /* EPRServiceInformationView_Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPRServiceInformationView_Company.swift; sourceTree = "<group>"; };
+		DF674FA32AEF79A00099DA0C /* EPRServiceInformationView_Legal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPRServiceInformationView_Legal.swift; sourceTree = "<group>"; };
+		DF674FA52AEF79AA0099DA0C /* EPRServiceInformationView_Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EPRServiceInformationView_Shop.swift; sourceTree = "<group>"; };
+		DF6D87422AF7698800D3D87D /* CreateViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateViewModifier.swift; sourceTree = "<group>"; };
+		DF6D87452AF76B6600D3D87D /* VATPaymentRefundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VATPaymentRefundView.swift; sourceTree = "<group>"; };
+		DF6D87482AF770F800D3D87D /* PackagingSummaryDeclarationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackagingSummaryDeclarationView.swift; sourceTree = "<group>"; };
+		DF6D874A2AF779DB00D3D87D /* packagingSummaryDeclarationSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = packagingSummaryDeclarationSearchView.swift; sourceTree = "<group>"; };
+		DF735E3A2AE610DC00242448 /* Abolish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Abolish.swift; sourceTree = "<group>"; };
+		DF735E3D2AE63E0C00242448 /* FileUpload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileUpload.swift; sourceTree = "<group>"; };
+		DF7A9C492ADA5ADD00DA1C9B /* CompanyRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyRequest.swift; sourceTree = "<group>"; };
+		DF7A9C4C2ADA659200DA1C9B /* ExampleJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleJSON.swift; sourceTree = "<group>"; };
+		DF7A9C4F2ADA66C600DA1C9B /* CompanyRequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyRequestAPI.swift; sourceTree = "<group>"; };
+		DF7A9C522ADA71C800DA1C9B /* CompanyinfoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyinfoRequest.swift; sourceTree = "<group>"; };
+		DF7A9C542ADA71EC00DA1C9B /* CompanyinfoRequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyinfoRequestAPI.swift; sourceTree = "<group>"; };
+		DF7A9C592ADA7EC800DA1C9B /* ProductRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRequest.swift; sourceTree = "<group>"; };
+		DF7A9C5B2ADA7F1200DA1C9B /* ProductRequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductRequestAPI.swift; sourceTree = "<group>"; };
+		DF7A9C5D2ADA864600DA1C9B /* TodoRequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRequestAPI.swift; sourceTree = "<group>"; };
+		DF7A9C5F2ADA865D00DA1C9B /* TodoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoRequest.swift; sourceTree = "<group>"; };
+		DF7A9C612ADA8A6C00DA1C9B /* WorkorderRequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkorderRequestAPI.swift; sourceTree = "<group>"; };
+		DF7A9C632ADA8A7F00DA1C9B /* WorkorderRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkorderRequest.swift; sourceTree = "<group>"; };
+		DF801F802AD787590096DFCF /* rule_apple_demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rule_apple_demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF801F832AD787590096DFCF /* rule_apple_demoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rule_apple_demoApp.swift; sourceTree = "<group>"; };
+		DF801F852AD787590096DFCF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DF801F872AD7875A0096DFCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF801F8A2AD7875A0096DFCF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DF801F902AD7875A0096DFCF /* rule_apple_demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rule_apple_demoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF801F942AD7875A0096DFCF /* rule_apple_demoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rule_apple_demoTests.swift; sourceTree = "<group>"; };
+		DF801F9A2AD7875A0096DFCF /* rule_apple_demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = rule_apple_demoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DF801F9E2AD7875A0096DFCF /* rule_apple_demoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rule_apple_demoUITests.swift; sourceTree = "<group>"; };
+		DF801FA02AD7875A0096DFCF /* rule_apple_demoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = rule_apple_demoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DFA9C0DB2B1073750032BD27 /* VATPaymentRefundView_One.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VATPaymentRefundView_One.swift; sourceTree = "<group>"; };
+		DFA9C0DD2B1073860032BD27 /* VATPaymentRefundView_List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VATPaymentRefundView_List.swift; sourceTree = "<group>"; };
+		DFAA5B242B074155005181D6 /* InformationView_Charts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InformationView_Charts.swift; sourceTree = "<group>"; };
+		DFAA5B272B074E47005181D6 /* ImportByFoodAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportByFoodAPI.swift; sourceTree = "<group>"; };
+		DFAA5B292B074E5D005181D6 /* ImportByJixieAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportByJixieAPI.swift; sourceTree = "<group>"; };
+		DFAA5B2B2B074E6B005181D6 /* ImportByHuaxuepinAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportByHuaxuepinAPI.swift; sourceTree = "<group>"; };
+		DFAA5B2D2B074E80005181D6 /* ImportByYuancailiaoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportByYuancailiaoAPI.swift; sourceTree = "<group>"; };
+		DFAA5B2F2B074EB0005181D6 /* ImportRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportRequest.swift; sourceTree = "<group>"; };
+		DFAFD06F2AFC69430049270B /* CultivateView_Declaration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultivateView_Declaration.swift; sourceTree = "<group>"; };
+		DFAFD0722AFC6F8A0049270B /* RobotMessageAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobotMessageAPI.swift; sourceTree = "<group>"; };
+		DFAFD0762AFE21210049270B /* CultivateView_Information_One.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultivateView_Information_One.swift; sourceTree = "<group>"; };
+		DFAFD0782AFE212D0049270B /* CultivateView_Information_List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultivateView_Information_List.swift; sourceTree = "<group>"; };
+		DFAFD07C2AFE23380049270B /* CultivateView_Information_Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultivateView_Information_Data.swift; sourceTree = "<group>"; };
+		DFAFD07E2AFE290E0049270B /* CultivateView_Search_Finish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultivateView_Search_Finish.swift; sourceTree = "<group>"; };
+		DFAFD0812AFE35EB0049270B /* Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Random.swift; sourceTree = "<group>"; };
+		DFAFD0842AFE3B910049270B /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
+		DFAFD0862B00945E0049270B /* CultivateView_Law.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultivateView_Law.swift; sourceTree = "<group>"; };
+		DFB252F02AF885AA00FC07D3 /* EudeclarationofconformityRequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EudeclarationofconformityRequestAPI.swift; sourceTree = "<group>"; };
+		DFB252F22AF885BA00FC07D3 /* EudeclarationofconformityRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EudeclarationofconformityRequest.swift; sourceTree = "<group>"; };
+		DFB252F42AF88BAF00FC07D3 /* Consumption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Consumption.swift; sourceTree = "<group>"; };
+		DFB252F62AF88BF000FC07D3 /* ComplianceapplicationRequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplianceapplicationRequestAPI.swift; sourceTree = "<group>"; };
+		DFB252F82AF88BFB00FC07D3 /* ComplianceapplicationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplianceapplicationRequest.swift; sourceTree = "<group>"; };
+		DFB3A5232AF0A7BD00B7212E /* TranslateAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateAPI.swift; sourceTree = "<group>"; };
+		DFC046812ADBBC7F00C12FA2 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		DFC046862ADBC0B600C12FA2 /* TestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestView.swift; sourceTree = "<group>"; };
+		DFC0468B2ADBCC3000C12FA2 /* TabLayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabLayoutView.swift; sourceTree = "<group>"; };
+		DFC0468D2ADBCFA900C12FA2 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		DFC0468F2ADBD2EA00C12FA2 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		DFC046932ADBD6D100C12FA2 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		DFC99FDA2AF9D07B005C6CD7 /* CultivateView_Introduction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultivateView_Introduction.swift; sourceTree = "<group>"; };
+		DFC99FDC2AF9D63D005C6CD7 /* CultivateView_Introduction_EPR.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CultivateView_Introduction_EPR.swift; sourceTree = "<group>"; };
+		DFE41F3E2AE68C8E004D6689 /* AgencyServiceInformationView_add_success.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyServiceInformationView_add_success.swift; sourceTree = "<group>"; };
+		DFE41F412AE69D56004D6689 /* AgencyServiceInformationView_Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgencyServiceInformationView_Table.swift; sourceTree = "<group>"; };
+		DFE41F442AE6BF02004D6689 /* PackagingSummaryDeclarationRequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackagingSummaryDeclarationRequestAPI.swift; sourceTree = "<group>"; };
+		DFE41F462AE6BF63004D6689 /* PackagingSummaryDeclarationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PackagingSummaryDeclarationRequest.swift; sourceTree = "<group>"; };
+		DFE41F482AE6C55E004D6689 /* TaxServiceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxServiceRequest.swift; sourceTree = "<group>"; };
+		DFE41F4A2AE6C681004D6689 /* TaxServiceRequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxServiceRequestAPI.swift; sourceTree = "<group>"; };
+		DFE41F4C2AE6C7CB004D6689 /* EprregistrationserviceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EprregistrationserviceRequest.swift; sourceTree = "<group>"; };
+		DFE41F4E2AE6C850004D6689 /* EprregistrationserviceRequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EprregistrationserviceRequestAPI.swift; sourceTree = "<group>"; };
+		DFE41F502AE6C972004D6689 /* EprregistrationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EprregistrationRequest.swift; sourceTree = "<group>"; };
+		DFE41F522AE6CAE5004D6689 /* EprregistrationRequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EprregistrationRequestAPI.swift; sourceTree = "<group>"; };
+		DFE41F542AE6CCA5004D6689 /* EprdeclarationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EprdeclarationRequest.swift; sourceTree = "<group>"; };
+		DFE41F562AE6D2C5004D6689 /* EprdeclarationRequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EprdeclarationRequestAPI.swift; sourceTree = "<group>"; };
+		DFE41F582AE6D4BD004D6689 /* VatpaymentRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VatpaymentRequest.swift; sourceTree = "<group>"; };
+		DFE41F5A2AE6D512004D6689 /* DocumentRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentRequest.swift; sourceTree = "<group>"; };
+		DFE41F5C2AE6D70D004D6689 /* VATView_List.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VATView_List.swift; sourceTree = "<group>"; };
+		DFE41F5E2AE6D71A004D6689 /* VATView_One.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VATView_One.swift; sourceTree = "<group>"; };
+		DFE41F602AE6E0AD004D6689 /* addVATServiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addVATServiceView.swift; sourceTree = "<group>"; };
+		DFF429B22ADBA0AE008491EF /* LocaltaxpolicyRequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaltaxpolicyRequestAPI.swift; sourceTree = "<group>"; };
+		DFF429B42ADBA0B8008491EF /* LocaltaxpolicyRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocaltaxpolicyRequest.swift; sourceTree = "<group>"; };
+		DFF429B62ADBA39A008491EF /* TaxdeclarationRequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxdeclarationRequestAPI.swift; sourceTree = "<group>"; };
+		DFF429B82ADBA3A8008491EF /* TaxdeclarationRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxdeclarationRequest.swift; sourceTree = "<group>"; };
+		DFF429BA2ADBAA46008491EF /* UserRequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequestAPI.swift; sourceTree = "<group>"; };
+		DFF429BC2ADBAA50008491EF /* UserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRequest.swift; sourceTree = "<group>"; };
+		DFF429BE2ADBAC78008491EF /* VatdeclarationdetailsRequestAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VatdeclarationdetailsRequestAPI.swift; sourceTree = "<group>"; };
+		DFF429C02ADBAC86008491EF /* VatdeclarationdetailsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VatdeclarationdetailsRequest.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DF801F7D2AD787580096DFCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF299CDB2ADBFFF300806482 /* TabBar in Frameworks */,
+				DF25C8C12AFB6103006C7AD3 /* StepperView in Frameworks */,
+				DF299CEF2ADD127F00806482 /* SlideOverCard in Frameworks */,
+				DF2015EB2B00A82A00110D2F /* Pages in Frameworks */,
+				6D231CDCE8232DE55B7A2A1F /* Pods_rule_apple_demo.framework in Frameworks */,
+				DF25C8C62AFB70FD006C7AD3 /* SwiftUICharts in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF801F8D2AD7875A0096DFCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DF73956C4814205B8138890 /* Pods_rule_apple_demoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF801F972AD7875A0096DFCF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D97AE9DDC48D8E2B61BEBE42 /* Pods_rule_apple_demo_rule_apple_demoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8CBB2AA59906860EB5ED07BF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7981B478AFF772C2B5154B7 /* Pods-rule_apple_demo.debug.xcconfig */,
+				723AC100C56ACB0D82FF1DA2 /* Pods-rule_apple_demo.release.xcconfig */,
+				08CC911BD023198F7AD39D12 /* Pods-rule_apple_demo-rule_apple_demoUITests.debug.xcconfig */,
+				D12B5DD36BB90F1AB4910042 /* Pods-rule_apple_demo-rule_apple_demoUITests.release.xcconfig */,
+				6CC03DFD635CCC161E0687C6 /* Pods-rule_apple_demoTests.debug.xcconfig */,
+				3CBEA73AD18A8EA79B9D3C07 /* Pods-rule_apple_demoTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C9624E33B9BEA0368FA502D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE5486EF928CCFF46CA3B962 /* Pods_rule_apple_demo.framework */,
+				2683AC6CF269B879B3CD3E4E /* Pods_rule_apple_demo_rule_apple_demoUITests.framework */,
+				5F3EA4D8F2D111C912FC4E4A /* Pods_rule_apple_demoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DF16D98C2AF324B40057E137 /* TaxPayment */ = {
+			isa = PBXGroup;
+			children = (
+				DF16D98D2AF324CA0057E137 /* TaxPaymentView.swift */,
+				DF16D98F2AF325270057E137 /* TaxPaymentView_One.swift */,
+				DF16D9912AF325310057E137 /* TaxPaymentView_List.swift */,
+				DF16D9972AF337110057E137 /* TaxPaymentView_Edit.swift */,
+			);
+			path = TaxPayment;
+			sourceTree = "<group>";
+		};
+		DF1C26A72AF21BD200E2F261 /* TranslateView */ = {
+			isa = PBXGroup;
+			children = (
+				DF1C26A82AF21BEB00E2F261 /* TranslateView.swift */,
+			);
+			path = TranslateView;
+			sourceTree = "<group>";
+		};
+		DF1C26AA2AF21EFF00E2F261 /* TranslateViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DF1C26AB2AF21F1B00E2F261 /* TranslateViewController.swift */,
+				DF1C26AF2AF2238A00E2F261 /* TranslateViewControllerToSwiftUI.swift */,
+			);
+			path = TranslateViewController;
+			sourceTree = "<group>";
+		};
+		DF299CDC2ADC488B00806482 /* WorkOrder */ = {
+			isa = PBXGroup;
+			children = (
+				DF299CDD2ADC489E00806482 /* WorkOrderView.swift */,
+				DF299CDF2ADC491100806482 /* WorkOrder_One_View.swift */,
+				DF299CE12ADC491F00806482 /* WorkOrder_List_View.swift */,
+			);
+			path = WorkOrder;
+			sourceTree = "<group>";
+		};
+		DF299CF02ADD169500806482 /* Agency Service Information */ = {
+			isa = PBXGroup;
+			children = (
+				DFE41F402AE69D42004D6689 /* Table */,
+				DF299CF12ADD16A800806482 /* AgencyServiceInformationView.swift */,
+				DF299CF32ADD191B00806482 /* AgencyServiceInformationView_VAT.swift */,
+				DF5A693C2ADE1611009AB044 /* AgencyServiceInformationView_Company.swift */,
+				DF62D4BB2ADE368800E73E21 /* AgencyServiceInformationView_Legal.swift */,
+				DF2E770A2AE0B0BB004F24E0 /* AgencyServiceInformationView_Shop.swift */,
+				DFE41F3E2AE68C8E004D6689 /* AgencyServiceInformationView_add_success.swift */,
+			);
+			path = "Agency Service Information";
+			sourceTree = "<group>";
+		};
+		DF299CF52ADD2B5600806482 /* AgencyServiceInformationViewAPI */ = {
+			isa = PBXGroup;
+			children = (
+				DF299CF62ADD2B6400806482 /* AgencyServiceInformationViewAPI.swift */,
+			);
+			path = AgencyServiceInformationViewAPI;
+			sourceTree = "<group>";
+		};
+		DF2E770C2AE0C46E004F24E0 /* VATDeclaration */ = {
+			isa = PBXGroup;
+			children = (
+				DF2E770D2AE0C4A1004F24E0 /* VATDeclarationView.swift */,
+				DF2E77122AE24F02004F24E0 /* VATDclarationView_Finish.swift */,
+			);
+			path = VATDeclaration;
+			sourceTree = "<group>";
+		};
+		DF2E770F2AE0D187004F24E0 /* VATDeclarationView */ = {
+			isa = PBXGroup;
+			children = (
+				DF2E77102AE0D199004F24E0 /* VATDeclarationViewAPI.swift */,
+			);
+			path = VATDeclarationView;
+			sourceTree = "<group>";
+		};
+		DF2E77142AE26538004F24E0 /* VAT */ = {
+			isa = PBXGroup;
+			children = (
+				DF2E77152AE26546004F24E0 /* VATView.swift */,
+				DF6D87442AF76B3400D3D87D /* VATPaymentRefund */,
+				DF16D98C2AF324B40057E137 /* TaxPayment */,
+				DF48CAD12AEA06220093DC4B /* Declaration */,
+				DFE41F622AE6E0B5004D6689 /* TaxService */,
+				DF299CF02ADD169500806482 /* Agency Service Information */,
+				DF2E770C2AE0C46E004F24E0 /* VATDeclaration */,
+			);
+			path = VAT;
+			sourceTree = "<group>";
+		};
+		DF2E77172AE27244004F24E0 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				DF1C26AA2AF21EFF00E2F261 /* TranslateViewController */,
+				DF664E3D2AE50C480069B7BF /* Web */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		DF34863F2AF08270006974D7 /* EPRdeclaration */ = {
+			isa = PBXGroup;
+			children = (
+				DF6D87472AF770BE00D3D87D /* PackagingSummaryDeclaration */,
+				DF3486402AF0828A006974D7 /* EPRdeclarationView.swift */,
+				DF3486462AF0874D006974D7 /* EPRdeclatationView_List.swift */,
+				DF3486482AF0875B006974D7 /* EPRdeclarationView_One.swift */,
+			);
+			path = EPRdeclaration;
+			sourceTree = "<group>";
+		};
+		DF48CAC82AE9EF1A0093DC4B /* Consumption */ = {
+			isa = PBXGroup;
+			children = (
+				DFB252F42AF88BAF00FC07D3 /* Consumption.swift */,
+				DF6308EE2B00F74C00FC43EB /* ConsumptionView_One.swift */,
+				DF6308F02B00F76D00FC43EB /* ConsumptionView_List.swift */,
+				DF6308F22B00F90100FC43EB /* ConsumptionView_Edit.swift */,
+				DF6308F42B01019600FC43EB /* ConsumptionView_Add.swift */,
+				DF6308FB2B01E9F900FC43EB /* ConsumptionView_Search_List.swift */,
+				DF6308FD2B01EA0700FC43EB /* ConsumptionView_Search_One.swift */,
+			);
+			path = Consumption;
+			sourceTree = "<group>";
+		};
+		DF48CACB2AE9FF0E0093DC4B /* Information */ = {
+			isa = PBXGroup;
+			children = (
+				DF48CACC2AE9FF230093DC4B /* InformationView.swift */,
+				DFAA5B242B074155005181D6 /* InformationView_Charts.swift */,
+			);
+			path = Information;
+			sourceTree = "<group>";
+		};
+		DF48CACE2AE9FF580093DC4B /* Cultivate */ = {
+			isa = PBXGroup;
+			children = (
+				DFAFD07A2AFE230A0049270B /* Cultivate_Information */,
+				DF48CACF2AE9FF6E0093DC4B /* CultivateView.swift */,
+				DFC99FDA2AF9D07B005C6CD7 /* CultivateView_Introduction.swift */,
+				DFC99FDC2AF9D63D005C6CD7 /* CultivateView_Introduction_EPR.swift */,
+				DF25C8BD2AF9EB79006C7AD3 /* CultivateView_Introduction_Product.swift */,
+				DF25C8C22AFB6BD9006C7AD3 /* CultivateView_VATDeclarationProcess.swift */,
+				DFAFD06F2AFC69430049270B /* CultivateView_Declaration.swift */,
+				DFAFD07E2AFE290E0049270B /* CultivateView_Search_Finish.swift */,
+				DFAFD0862B00945E0049270B /* CultivateView_Law.swift */,
+				DF6308FF2B01EEA400FC43EB /* CultivateView_Law_VAT.swift */,
+				DF6309012B01EEB600FC43EB /* CultivateView_Law_EPR.swift */,
+				DF6309092B02017F00FC43EB /* CultivateView_Other.swift */,
+				DF6309102B02291500FC43EB /* CultivateView_market.swift */,
+			);
+			path = Cultivate;
+			sourceTree = "<group>";
+		};
+		DF48CAD12AEA06220093DC4B /* Declaration */ = {
+			isa = PBXGroup;
+			children = (
+				DF48CAD22AEA06370093DC4B /* DeclarationView.swift */,
+				DF48CAD42AEA06F50093DC4B /* DeclarationView_One.swift */,
+				DF48CAD62AEA07060093DC4B /* DeclarationView_List.swift */,
+				DF6309122B02454300FC43EB /* DeclarationView_Document.swift */,
+			);
+			path = Declaration;
+			sourceTree = "<group>";
+		};
+		DF6308F62B0117AC00FC43EB /* Tips */ = {
+			isa = PBXGroup;
+			children = (
+				DF6308F72B0117BD00FC43EB /* Tips.swift */,
+			);
+			path = Tips;
+			sourceTree = "<group>";
+		};
+		DF664E3D2AE50C480069B7BF /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				DF2E77182AE27263004F24E0 /* WebView.swift */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		DF664E3E2AE510CC0069B7BF /* Privacy */ = {
+			isa = PBXGroup;
+			children = (
+				DF664E3F2AE511430069B7BF /* PrivacyView.swift */,
+				DF664E412AE5178E0069B7BF /* DetermineAdministertView.swift */,
+				DF664E432AE527CE0069B7BF /* ComplianceAndSafetyInspectionView.swift */,
+				DF664E452AE52AF30069B7BF /* LawSearchView.swift */,
+			);
+			path = Privacy;
+			sourceTree = "<group>";
+		};
+		DF674F882AEE390F0099DA0C /* EPR */ = {
+			isa = PBXGroup;
+			children = (
+				DF674F892AEE39200099DA0C /* EPRView.swift */,
+				DF34863F2AF08270006974D7 /* EPRdeclaration */,
+				DF674F9B2AEE453C0099DA0C /* EPR Service Information */,
+				DF674F932AEE44940099DA0C /* EPRService */,
+			);
+			path = EPR;
+			sourceTree = "<group>";
+		};
+		DF674F932AEE44940099DA0C /* EPRService */ = {
+			isa = PBXGroup;
+			children = (
+				DF674F942AEE44B30099DA0C /* EPRServiceView_One.swift */,
+				DF674F962AEE44BF0099DA0C /* EPRServiceView_List.swift */,
+				DF674F982AEE44CF0099DA0C /* addEPRServiceView.swift */,
+			);
+			path = EPRService;
+			sourceTree = "<group>";
+		};
+		DF674F9B2AEE453C0099DA0C /* EPR Service Information */ = {
+			isa = PBXGroup;
+			children = (
+				DF674F9C2AEE455F0099DA0C /* EPRServiceInformationView.swift */,
+				DF674FA12AEF79960099DA0C /* EPRServiceInformationView_Company.swift */,
+				DF674FA32AEF79A00099DA0C /* EPRServiceInformationView_Legal.swift */,
+				DF674FA52AEF79AA0099DA0C /* EPRServiceInformationView_Shop.swift */,
+			);
+			path = "EPR Service Information";
+			sourceTree = "<group>";
+		};
+		DF674F9E2AEF477C0099DA0C /* EPRAPI */ = {
+			isa = PBXGroup;
+			children = (
+				DF674F9F2AEF47880099DA0C /* EPRAPI.swift */,
+			);
+			path = EPRAPI;
+			sourceTree = "<group>";
+		};
+		DF6D87412AF7697400D3D87D /* ViewModifier */ = {
+			isa = PBXGroup;
+			children = (
+				DF6D87422AF7698800D3D87D /* CreateViewModifier.swift */,
+			);
+			path = ViewModifier;
+			sourceTree = "<group>";
+		};
+		DF6D87442AF76B3400D3D87D /* VATPaymentRefund */ = {
+			isa = PBXGroup;
+			children = (
+				DF6D87452AF76B6600D3D87D /* VATPaymentRefundView.swift */,
+				DFA9C0DB2B1073750032BD27 /* VATPaymentRefundView_One.swift */,
+				DFA9C0DD2B1073860032BD27 /* VATPaymentRefundView_List.swift */,
+			);
+			path = VATPaymentRefund;
+			sourceTree = "<group>";
+		};
+		DF6D87472AF770BE00D3D87D /* PackagingSummaryDeclaration */ = {
+			isa = PBXGroup;
+			children = (
+				DF6D87482AF770F800D3D87D /* PackagingSummaryDeclarationView.swift */,
+				DF6D874A2AF779DB00D3D87D /* packagingSummaryDeclarationSearchView.swift */,
+			);
+			path = PackagingSummaryDeclaration;
+			sourceTree = "<group>";
+		};
+		DF735E3C2AE63DE800242448 /* FileUploadAPI */ = {
+			isa = PBXGroup;
+			children = (
+				DF735E3D2AE63E0C00242448 /* FileUpload.swift */,
+			);
+			path = FileUploadAPI;
+			sourceTree = "<group>";
+		};
+		DF7A9C482ADA572500DA1C9B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DF7A9C492ADA5ADD00DA1C9B /* CompanyRequest.swift */,
+				DF7A9C522ADA71C800DA1C9B /* CompanyinfoRequest.swift */,
+				DF7A9C592ADA7EC800DA1C9B /* ProductRequest.swift */,
+				DF7A9C5F2ADA865D00DA1C9B /* TodoRequest.swift */,
+				DF7A9C632ADA8A7F00DA1C9B /* WorkorderRequest.swift */,
+				DFF429B42ADBA0B8008491EF /* LocaltaxpolicyRequest.swift */,
+				DFF429B82ADBA3A8008491EF /* TaxdeclarationRequest.swift */,
+				DFF429BC2ADBAA50008491EF /* UserRequest.swift */,
+				DFF429C02ADBAC86008491EF /* VatdeclarationdetailsRequest.swift */,
+				DFE41F462AE6BF63004D6689 /* PackagingSummaryDeclarationRequest.swift */,
+				DFE41F482AE6C55E004D6689 /* TaxServiceRequest.swift */,
+				DFE41F4C2AE6C7CB004D6689 /* EprregistrationserviceRequest.swift */,
+				DFE41F502AE6C972004D6689 /* EprregistrationRequest.swift */,
+				DFE41F542AE6CCA5004D6689 /* EprdeclarationRequest.swift */,
+				DFE41F582AE6D4BD004D6689 /* VatpaymentRequest.swift */,
+				DFE41F5A2AE6D512004D6689 /* DocumentRequest.swift */,
+				DF674F862AEE2CF40099DA0C /* TaxpaymentnextRequest.swift */,
+				DF674F8D2AEE3AF30099DA0C /* EprdeclarationRequest_1.swift */,
+				DF674F912AEE3F7E0099DA0C /* EprserviceRequest.swift */,
+				DF3486442AF084A5006974D7 /* TaxrefundRequest.swift */,
+				DF16D9952AF328F70057E137 /* TaxpaymentRequest.swift */,
+				DFB252F22AF885BA00FC07D3 /* EudeclarationofconformityRequest.swift */,
+				DFB252F82AF88BFB00FC07D3 /* ComplianceapplicationRequest.swift */,
+				DFAA5B2F2B074EB0005181D6 /* ImportRequest.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DF7A9C4B2ADA658400DA1C9B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DF7A9C4C2ADA659200DA1C9B /* ExampleJSON.swift */,
+				DF735E3A2AE610DC00242448 /* Abolish.swift */,
+				DFAFD0842AFE3B910049270B /* Data.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		DF7A9C4E2ADA66B600DA1C9B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				DFAA5B262B074E23005181D6 /* ImportAPIs */,
+				DFAFD0802AFE35DB0049270B /* RanDom */,
+				DFAFD0712AFC6F720049270B /* RobotMessageAPI */,
+				DFB3A5222AF0A7A900B7212E /* TranslateAPI */,
+				DF674F9E2AEF477C0099DA0C /* EPRAPI */,
+				DF735E3C2AE63DE800242448 /* FileUploadAPI */,
+				DF2E770F2AE0D187004F24E0 /* VATDeclarationView */,
+				DF299CF52ADD2B5600806482 /* AgencyServiceInformationViewAPI */,
+				DF7A9C4F2ADA66C600DA1C9B /* CompanyRequestAPI.swift */,
+				DF7A9C542ADA71EC00DA1C9B /* CompanyinfoRequestAPI.swift */,
+				DF7A9C5B2ADA7F1200DA1C9B /* ProductRequestAPI.swift */,
+				DF7A9C5D2ADA864600DA1C9B /* TodoRequestAPI.swift */,
+				DF7A9C612ADA8A6C00DA1C9B /* WorkorderRequestAPI.swift */,
+				DFF429B22ADBA0AE008491EF /* LocaltaxpolicyRequestAPI.swift */,
+				DFF429B62ADBA39A008491EF /* TaxdeclarationRequestAPI.swift */,
+				DFF429BA2ADBAA46008491EF /* UserRequestAPI.swift */,
+				DFF429BE2ADBAC78008491EF /* VatdeclarationdetailsRequestAPI.swift */,
+				DFE41F442AE6BF02004D6689 /* PackagingSummaryDeclarationRequestAPI.swift */,
+				DFE41F4A2AE6C681004D6689 /* TaxServiceRequestAPI.swift */,
+				DFE41F4E2AE6C850004D6689 /* EprregistrationserviceRequestAPI.swift */,
+				DFE41F522AE6CAE5004D6689 /* EprregistrationRequestAPI.swift */,
+				DFE41F562AE6D2C5004D6689 /* EprdeclarationRequestAPI.swift */,
+				DF674F842AEE2CC90099DA0C /* TaxpaymentnextAPI.swift */,
+				DF674F8B2AEE3AD40099DA0C /* EprdeclarationRequest_1API.swift */,
+				DF674F8F2AEE3F720099DA0C /* EprserviceRequestAPI.swift */,
+				DF3486422AF08493006974D7 /* TaxrefundRequestAPI.swift */,
+				DF16D9932AF328DE0057E137 /* TaxpaymentRequestAPI.swift */,
+				DFB252F02AF885AA00FC07D3 /* EudeclarationofconformityRequestAPI.swift */,
+				DFB252F62AF88BF000FC07D3 /* ComplianceapplicationRequestAPI.swift */,
+				DF5540A02B22325400EEC440 /* BaseURL.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		DF7A9C562ADA71F600DA1C9B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DF1C26A72AF21BD200E2F261 /* TranslateView */,
+				DF48CACE2AE9FF580093DC4B /* Cultivate */,
+				DF48CACB2AE9FF0E0093DC4B /* Information */,
+				DFE41F432AE6A112004D6689 /* 通用View */,
+				DF2E77172AE27244004F24E0 /* UIKit */,
+				DFC046912ADBD6C100C12FA2 /* User */,
+				DFC046882ADBCC0400C12FA2 /* Tab */,
+				DFC046852ADBC0AA00C12FA2 /* Test */,
+				DFF429C22ADBAF5B008491EF /* Home */,
+				DFC0468D2ADBCFA900C12FA2 /* LoginView.swift */,
+				DF63091A2B02FAB300FC43EB /* LoginView_Regisiter.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DF7A9C572ADA71FA00DA1C9B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DFC0468F2ADBD2EA00C12FA2 /* UserViewModel.swift */,
+				DF6309142B024B5100FC43EB /* VATDocumentViewModel.swift */,
+				DF63091C2B03184800FC43EB /* EPRDocumentViewModel.swift */,
+				DF63091E2B03186100FC43EB /* ConsumptionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DF7A9C582ADA720700DA1C9B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DF6308F62B0117AC00FC43EB /* Tips */,
+				DF6D87412AF7697400D3D87D /* ViewModifier */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DF801F772AD787580096DFCF = {
+			isa = PBXGroup;
+			children = (
+				DF801F822AD787590096DFCF /* rule_apple_demo */,
+				DF801F932AD7875A0096DFCF /* rule_apple_demoTests */,
+				DF801F9D2AD7875A0096DFCF /* rule_apple_demoUITests */,
+				DF801F812AD787590096DFCF /* Products */,
+				8CBB2AA59906860EB5ED07BF /* Pods */,
+				C9624E33B9BEA0368FA502D2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DF801F812AD787590096DFCF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DF801F802AD787590096DFCF /* rule_apple_demo.app */,
+				DF801F902AD7875A0096DFCF /* rule_apple_demoTests.xctest */,
+				DF801F9A2AD7875A0096DFCF /* rule_apple_demoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DF801F822AD787590096DFCF /* rule_apple_demo */ = {
+			isa = PBXGroup;
+			children = (
+				DF62D4BA2ADE32BD00E73E21 /* rule-apple-demo-Info.plist */,
+				DF7A9C582ADA720700DA1C9B /* Resources */,
+				DF7A9C572ADA71FA00DA1C9B /* ViewModel */,
+				DF7A9C562ADA71F600DA1C9B /* View */,
+				DF7A9C4E2ADA66B600DA1C9B /* API */,
+				DF7A9C4B2ADA658400DA1C9B /* Data */,
+				DF7A9C482ADA572500DA1C9B /* Model */,
+				DF801F832AD787590096DFCF /* rule_apple_demoApp.swift */,
+				DF801F852AD787590096DFCF /* ContentView.swift */,
+				DF801F872AD7875A0096DFCF /* Assets.xcassets */,
+				DF801F892AD7875A0096DFCF /* Preview Content */,
+			);
+			path = rule_apple_demo;
+			sourceTree = "<group>";
+		};
+		DF801F892AD7875A0096DFCF /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DF801F8A2AD7875A0096DFCF /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DF801F932AD7875A0096DFCF /* rule_apple_demoTests */ = {
+			isa = PBXGroup;
+			children = (
+				DF801F942AD7875A0096DFCF /* rule_apple_demoTests.swift */,
+			);
+			path = rule_apple_demoTests;
+			sourceTree = "<group>";
+		};
+		DF801F9D2AD7875A0096DFCF /* rule_apple_demoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DF801F9E2AD7875A0096DFCF /* rule_apple_demoUITests.swift */,
+				DF801FA02AD7875A0096DFCF /* rule_apple_demoUITestsLaunchTests.swift */,
+			);
+			path = rule_apple_demoUITests;
+			sourceTree = "<group>";
+		};
+		DFAA5B262B074E23005181D6 /* ImportAPIs */ = {
+			isa = PBXGroup;
+			children = (
+				DFAA5B272B074E47005181D6 /* ImportByFoodAPI.swift */,
+				DFAA5B292B074E5D005181D6 /* ImportByJixieAPI.swift */,
+				DFAA5B2B2B074E6B005181D6 /* ImportByHuaxuepinAPI.swift */,
+				DFAA5B2D2B074E80005181D6 /* ImportByYuancailiaoAPI.swift */,
+			);
+			path = ImportAPIs;
+			sourceTree = "<group>";
+		};
+		DFAFD0712AFC6F720049270B /* RobotMessageAPI */ = {
+			isa = PBXGroup;
+			children = (
+				DFAFD0722AFC6F8A0049270B /* RobotMessageAPI.swift */,
+			);
+			path = RobotMessageAPI;
+			sourceTree = "<group>";
+		};
+		DFAFD07A2AFE230A0049270B /* Cultivate_Information */ = {
+			isa = PBXGroup;
+			children = (
+				DFAFD07B2AFE23240049270B /* Data */,
+				DFAFD0762AFE21210049270B /* CultivateView_Information_One.swift */,
+				DFAFD0782AFE212D0049270B /* CultivateView_Information_List.swift */,
+			);
+			path = Cultivate_Information;
+			sourceTree = "<group>";
+		};
+		DFAFD07B2AFE23240049270B /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DFAFD07C2AFE23380049270B /* CultivateView_Information_Data.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		DFAFD0802AFE35DB0049270B /* RanDom */ = {
+			isa = PBXGroup;
+			children = (
+				DFAFD0812AFE35EB0049270B /* Random.swift */,
+			);
+			path = RanDom;
+			sourceTree = "<group>";
+		};
+		DFB3A5222AF0A7A900B7212E /* TranslateAPI */ = {
+			isa = PBXGroup;
+			children = (
+				DFB3A5232AF0A7BD00B7212E /* TranslateAPI.swift */,
+			);
+			path = TranslateAPI;
+			sourceTree = "<group>";
+		};
+		DFC046852ADBC0AA00C12FA2 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				DFC046862ADBC0B600C12FA2 /* TestView.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		DFC046882ADBCC0400C12FA2 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				DFC0468B2ADBCC3000C12FA2 /* TabLayoutView.swift */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		DFC046912ADBD6C100C12FA2 /* User */ = {
+			isa = PBXGroup;
+			children = (
+				DFC046932ADBD6D100C12FA2 /* UserView.swift */,
+				DF299CDC2ADC488B00806482 /* WorkOrder */,
+				DF6309162B026C4400FC43EB /* UserView_Information.swift */,
+				DF6309182B0270E300FC43EB /* UserView_Company.swift */,
+			);
+			path = User;
+			sourceTree = "<group>";
+		};
+		DFE41F402AE69D42004D6689 /* Table */ = {
+			isa = PBXGroup;
+			children = (
+				DFE41F412AE69D56004D6689 /* AgencyServiceInformationView_Table.swift */,
+			);
+			path = Table;
+			sourceTree = "<group>";
+		};
+		DFE41F432AE6A112004D6689 /* 通用View */ = {
+			isa = PBXGroup;
+			children = (
+				DF6309052B01F7F800FC43EB /* ExpandableView.swift */,
+				DF6309042B01F7F800FC43EB /* ExpandedView.swift */,
+				DF6309032B01F7F800FC43EB /* ThumbnailView.swift */,
+				DF5A693A2ADE0CA9009AB044 /* DocumentUpView.swift */,
+				DF5A69382ADE0B62009AB044 /* ImagePicker.swift */,
+				DF63090D2B021DA000FC43EB /* BaiduTranslateView.swift */,
+			);
+			path = "通用View";
+			sourceTree = "<group>";
+		};
+		DFE41F622AE6E0B5004D6689 /* TaxService */ = {
+			isa = PBXGroup;
+			children = (
+				DFE41F5E2AE6D71A004D6689 /* VATView_One.swift */,
+				DFE41F5C2AE6D70D004D6689 /* VATView_List.swift */,
+				DFE41F602AE6E0AD004D6689 /* addVATServiceView.swift */,
+			);
+			path = TaxService;
+			sourceTree = "<group>";
+		};
+		DFF429C22ADBAF5B008491EF /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DFC046812ADBBC7F00C12FA2 /* HomeView.swift */,
+				DF48CAC82AE9EF1A0093DC4B /* Consumption */,
+				DF664E3E2AE510CC0069B7BF /* Privacy */,
+				DF2E77142AE26538004F24E0 /* VAT */,
+				DF674F882AEE390F0099DA0C /* EPR */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DF801F7F2AD787580096DFCF /* rule_apple_demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF801FA42AD7875A0096DFCF /* Build configuration list for PBXNativeTarget "rule_apple_demo" */;
+			buildPhases = (
+				B585EA509FDFCD4325632FF4 /* [CP] Check Pods Manifest.lock */,
+				DF801F7C2AD787580096DFCF /* Sources */,
+				DF801F7D2AD787580096DFCF /* Frameworks */,
+				DF801F7E2AD787580096DFCF /* Resources */,
+				EECC7336CA58B53A0AB97296 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = rule_apple_demo;
+			packageProductDependencies = (
+				DF299CDA2ADBFFF300806482 /* TabBar */,
+				DF299CEE2ADD127F00806482 /* SlideOverCard */,
+				DF25C8C02AFB6103006C7AD3 /* StepperView */,
+				DF25C8C52AFB70FD006C7AD3 /* SwiftUICharts */,
+				DF2015EA2B00A82A00110D2F /* Pages */,
+			);
+			productName = rule_apple_demo;
+			productReference = DF801F802AD787590096DFCF /* rule_apple_demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DF801F8F2AD7875A0096DFCF /* rule_apple_demoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF801FA72AD7875A0096DFCF /* Build configuration list for PBXNativeTarget "rule_apple_demoTests" */;
+			buildPhases = (
+				40F9E5A600174BB41122B756 /* [CP] Check Pods Manifest.lock */,
+				DF801F8C2AD7875A0096DFCF /* Sources */,
+				DF801F8D2AD7875A0096DFCF /* Frameworks */,
+				DF801F8E2AD7875A0096DFCF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF801F922AD7875A0096DFCF /* PBXTargetDependency */,
+			);
+			name = rule_apple_demoTests;
+			productName = rule_apple_demoTests;
+			productReference = DF801F902AD7875A0096DFCF /* rule_apple_demoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DF801F992AD7875A0096DFCF /* rule_apple_demoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DF801FAA2AD7875A0096DFCF /* Build configuration list for PBXNativeTarget "rule_apple_demoUITests" */;
+			buildPhases = (
+				82254121445941B1370F4C3B /* [CP] Check Pods Manifest.lock */,
+				DF801F962AD7875A0096DFCF /* Sources */,
+				DF801F972AD7875A0096DFCF /* Frameworks */,
+				DF801F982AD7875A0096DFCF /* Resources */,
+				183EC866FB1952D92CCAA2AF /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DF801F9C2AD7875A0096DFCF /* PBXTargetDependency */,
+			);
+			name = rule_apple_demoUITests;
+			productName = rule_apple_demoUITests;
+			productReference = DF801F9A2AD7875A0096DFCF /* rule_apple_demoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DF801F782AD787580096DFCF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					DF801F7F2AD787580096DFCF = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					DF801F8F2AD7875A0096DFCF = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = DF801F7F2AD787580096DFCF;
+					};
+					DF801F992AD7875A0096DFCF = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = DF801F7F2AD787580096DFCF;
+					};
+				};
+			};
+			buildConfigurationList = DF801F7B2AD787580096DFCF /* Build configuration list for PBXProject "rule_apple_demo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DF801F772AD787580096DFCF;
+			packageReferences = (
+				DF299CD92ADBFFF300806482 /* XCRemoteSwiftPackageReference "TabBar" */,
+				DF299CED2ADD127F00806482 /* XCRemoteSwiftPackageReference "SlideOverCard" */,
+				DF25C8BF2AFB6103006C7AD3 /* XCRemoteSwiftPackageReference "StepperView" */,
+				DF25C8C42AFB70FD006C7AD3 /* XCRemoteSwiftPackageReference "SwiftUICharts" */,
+				DF2015E92B00A82A00110D2F /* XCRemoteSwiftPackageReference "Pages" */,
+			);
+			productRefGroup = DF801F812AD787590096DFCF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DF801F7F2AD787580096DFCF /* rule_apple_demo */,
+				DF801F8F2AD7875A0096DFCF /* rule_apple_demoTests */,
+				DF801F992AD7875A0096DFCF /* rule_apple_demoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF801F7E2AD787580096DFCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF801F8B2AD7875A0096DFCF /* Preview Assets.xcassets in Resources */,
+				DF801F882AD7875A0096DFCF /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF801F8E2AD7875A0096DFCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF801F982AD7875A0096DFCF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		183EC866FB1952D92CCAA2AF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rule_apple_demo-rule_apple_demoUITests/Pods-rule_apple_demo-rule_apple_demoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rule_apple_demo-rule_apple_demoUITests/Pods-rule_apple_demo-rule_apple_demoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rule_apple_demo-rule_apple_demoUITests/Pods-rule_apple_demo-rule_apple_demoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40F9E5A600174BB41122B756 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rule_apple_demoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82254121445941B1370F4C3B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rule_apple_demo-rule_apple_demoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B585EA509FDFCD4325632FF4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rule_apple_demo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EECC7336CA58B53A0AB97296 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rule_apple_demo/Pods-rule_apple_demo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-rule_apple_demo/Pods-rule_apple_demo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-rule_apple_demo/Pods-rule_apple_demo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DF801F7C2AD787580096DFCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF674F852AEE2CC90099DA0C /* TaxpaymentnextAPI.swift in Sources */,
+				DF5A693D2ADE1611009AB044 /* AgencyServiceInformationView_Company.swift in Sources */,
+				DF299CE22ADC491F00806482 /* WorkOrder_List_View.swift in Sources */,
+				DF48CAD02AE9FF6E0093DC4B /* CultivateView.swift in Sources */,
+				DF674FA02AEF47880099DA0C /* EPRAPI.swift in Sources */,
+				DF6308F82B0117BD00FC43EB /* Tips.swift in Sources */,
+				DFAFD0732AFC6F8A0049270B /* RobotMessageAPI.swift in Sources */,
+				DFAA5B302B074EB0005181D6 /* ImportRequest.swift in Sources */,
+				DF2E770B2AE0B0BB004F24E0 /* AgencyServiceInformationView_Shop.swift in Sources */,
+				DF7A9C5C2ADA7F1200DA1C9B /* ProductRequestAPI.swift in Sources */,
+				DFA9C0DC2B1073750032BD27 /* VATPaymentRefundView_One.swift in Sources */,
+				DF674F972AEE44BF0099DA0C /* EPRServiceView_List.swift in Sources */,
+				DF7A9C552ADA71EC00DA1C9B /* CompanyinfoRequestAPI.swift in Sources */,
+				DFC99FDB2AF9D07B005C6CD7 /* CultivateView_Introduction.swift in Sources */,
+				DF5A69392ADE0B62009AB044 /* ImagePicker.swift in Sources */,
+				DF7A9C5E2ADA864600DA1C9B /* TodoRequestAPI.swift in Sources */,
+				DF48CAD72AEA07060093DC4B /* DeclarationView_List.swift in Sources */,
+				DFE41F4D2AE6C7CB004D6689 /* EprregistrationserviceRequest.swift in Sources */,
+				DF299CF22ADD16A800806482 /* AgencyServiceInformationView.swift in Sources */,
+				DFE41F452AE6BF02004D6689 /* PackagingSummaryDeclarationRequestAPI.swift in Sources */,
+				DF7A9C5A2ADA7EC800DA1C9B /* ProductRequest.swift in Sources */,
+				DF674F8C2AEE3AD40099DA0C /* EprdeclarationRequest_1API.swift in Sources */,
+				DFE41F552AE6CCA5004D6689 /* EprdeclarationRequest.swift in Sources */,
+				DFE41F612AE6E0AD004D6689 /* addVATServiceView.swift in Sources */,
+				DF6309082B01F7F800FC43EB /* ExpandableView.swift in Sources */,
+				DFB252F52AF88BAF00FC07D3 /* Consumption.swift in Sources */,
+				DF6D874B2AF779DB00D3D87D /* packagingSummaryDeclarationSearchView.swift in Sources */,
+				DF63090A2B02017F00FC43EB /* CultivateView_Other.swift in Sources */,
+				DFE41F3F2AE68C8E004D6689 /* AgencyServiceInformationView_add_success.swift in Sources */,
+				DF6308F32B00F90100FC43EB /* ConsumptionView_Edit.swift in Sources */,
+				DF6D87462AF76B6600D3D87D /* VATPaymentRefundView.swift in Sources */,
+				DF6308FC2B01E9F900FC43EB /* ConsumptionView_Search_List.swift in Sources */,
+				DF63091B2B02FAB300FC43EB /* LoginView_Regisiter.swift in Sources */,
+				DFB252F92AF88BFB00FC07D3 /* ComplianceapplicationRequest.swift in Sources */,
+				DFF429BD2ADBAA50008491EF /* UserRequest.swift in Sources */,
+				DF6D87432AF7698800D3D87D /* CreateViewModifier.swift in Sources */,
+				DF2E770E2AE0C4A1004F24E0 /* VATDeclarationView.swift in Sources */,
+				DF1C26A92AF21BEB00E2F261 /* TranslateView.swift in Sources */,
+				DFC046822ADBBC7F00C12FA2 /* HomeView.swift in Sources */,
+				DF6309132B02454300FC43EB /* DeclarationView_Document.swift in Sources */,
+				DF6308F52B01019600FC43EB /* ConsumptionView_Add.swift in Sources */,
+				DF63091D2B03184800FC43EB /* EPRDocumentViewModel.swift in Sources */,
+				DF16D98E2AF324CA0057E137 /* TaxPaymentView.swift in Sources */,
+				DFE41F4B2AE6C681004D6689 /* TaxServiceRequestAPI.swift in Sources */,
+				DF3486452AF084A5006974D7 /* TaxrefundRequest.swift in Sources */,
+				DFAFD0702AFC69430049270B /* CultivateView_Declaration.swift in Sources */,
+				DF801F862AD787590096DFCF /* ContentView.swift in Sources */,
+				DFC99FDD2AF9D63D005C6CD7 /* CultivateView_Introduction_EPR.swift in Sources */,
+				DF1C26B02AF2238A00E2F261 /* TranslateViewControllerToSwiftUI.swift in Sources */,
+				DF48CAD32AEA06370093DC4B /* DeclarationView.swift in Sources */,
+				DF6308EF2B00F74C00FC43EB /* ConsumptionView_One.swift in Sources */,
+				DF674F8A2AEE39200099DA0C /* EPRView.swift in Sources */,
+				DF3486432AF08493006974D7 /* TaxrefundRequestAPI.swift in Sources */,
+				DFB3A5242AF0A7BD00B7212E /* TranslateAPI.swift in Sources */,
+				DF6309062B01F7F800FC43EB /* ThumbnailView.swift in Sources */,
+				DFF429BB2ADBAA46008491EF /* UserRequestAPI.swift in Sources */,
+				DFAFD07D2AFE23380049270B /* CultivateView_Information_Data.swift in Sources */,
+				DF674F8E2AEE3AF30099DA0C /* EprdeclarationRequest_1.swift in Sources */,
+				DF299CF72ADD2B6400806482 /* AgencyServiceInformationViewAPI.swift in Sources */,
+				DFF429B52ADBA0B8008491EF /* LocaltaxpolicyRequest.swift in Sources */,
+				DF7A9C642ADA8A7F00DA1C9B /* WorkorderRequest.swift in Sources */,
+				DFB252F12AF885AA00FC07D3 /* EudeclarationofconformityRequestAPI.swift in Sources */,
+				DFC0468E2ADBCFA900C12FA2 /* LoginView.swift in Sources */,
+				DFE41F422AE69D56004D6689 /* AgencyServiceInformationView_Table.swift in Sources */,
+				DF63090E2B021DA000FC43EB /* BaiduTranslateView.swift in Sources */,
+				DF3486412AF0828A006974D7 /* EPRdeclarationView.swift in Sources */,
+				DFAFD0772AFE21210049270B /* CultivateView_Information_One.swift in Sources */,
+				DFE41F5B2AE6D512004D6689 /* DocumentRequest.swift in Sources */,
+				DF6D87492AF770F800D3D87D /* PackagingSummaryDeclarationView.swift in Sources */,
+				DF7A9C502ADA66C600DA1C9B /* CompanyRequestAPI.swift in Sources */,
+				DFE41F592AE6D4BD004D6689 /* VatpaymentRequest.swift in Sources */,
+				DFAA5B2C2B074E6B005181D6 /* ImportByHuaxuepinAPI.swift in Sources */,
+				DFF429BF2ADBAC78008491EF /* VatdeclarationdetailsRequestAPI.swift in Sources */,
+				DFC046872ADBC0B600C12FA2 /* TestView.swift in Sources */,
+				DF5A693B2ADE0CA9009AB044 /* DocumentUpView.swift in Sources */,
+				DF801F842AD787590096DFCF /* rule_apple_demoApp.swift in Sources */,
+				DFAFD0872B00945E0049270B /* CultivateView_Law.swift in Sources */,
+				DF674FA62AEF79AA0099DA0C /* EPRServiceInformationView_Shop.swift in Sources */,
+				DF664E442AE527CE0069B7BF /* ComplianceAndSafetyInspectionView.swift in Sources */,
+				DFE41F4F2AE6C850004D6689 /* EprregistrationserviceRequestAPI.swift in Sources */,
+				DFAA5B282B074E48005181D6 /* ImportByFoodAPI.swift in Sources */,
+				DFE41F472AE6BF63004D6689 /* PackagingSummaryDeclarationRequest.swift in Sources */,
+				DF25C8C32AFB6BDA006C7AD3 /* CultivateView_VATDeclarationProcess.swift in Sources */,
+				DFE41F532AE6CAE5004D6689 /* EprregistrationRequestAPI.swift in Sources */,
+				DF674F872AEE2CF40099DA0C /* TaxpaymentnextRequest.swift in Sources */,
+				DF674FA42AEF79A00099DA0C /* EPRServiceInformationView_Legal.swift in Sources */,
+				DF7A9C532ADA71C800DA1C9B /* CompanyinfoRequest.swift in Sources */,
+				DF664E422AE5178E0069B7BF /* DetermineAdministertView.swift in Sources */,
+				DFAFD07F2AFE290E0049270B /* CultivateView_Search_Finish.swift in Sources */,
+				DFAA5B2A2B074E5D005181D6 /* ImportByJixieAPI.swift in Sources */,
+				DFAA5B2E2B074E80005181D6 /* ImportByYuancailiaoAPI.swift in Sources */,
+				DFE41F5F2AE6D71A004D6689 /* VATView_One.swift in Sources */,
+				DFE41F492AE6C55E004D6689 /* TaxServiceRequest.swift in Sources */,
+				DF2E77192AE27263004F24E0 /* WebView.swift in Sources */,
+				DF674FA22AEF79960099DA0C /* EPRServiceInformationView_Company.swift in Sources */,
+				DF2E77162AE26546004F24E0 /* VATView.swift in Sources */,
+				DF7A9C602ADA865D00DA1C9B /* TodoRequest.swift in Sources */,
+				DFF429B32ADBA0AE008491EF /* LocaltaxpolicyRequestAPI.swift in Sources */,
+				DFE41F5D2AE6D70D004D6689 /* VATView_List.swift in Sources */,
+				DF16D9902AF325270057E137 /* TaxPaymentView_One.swift in Sources */,
+				DF299CF42ADD191B00806482 /* AgencyServiceInformationView_VAT.swift in Sources */,
+				DF674F952AEE44B30099DA0C /* EPRServiceView_One.swift in Sources */,
+				DF3486492AF0875B006974D7 /* EPRdeclarationView_One.swift in Sources */,
+				DF6309152B024B5100FC43EB /* VATDocumentViewModel.swift in Sources */,
+				DF674F922AEE3F7E0099DA0C /* EprserviceRequest.swift in Sources */,
+				DFA9C0DE2B1073860032BD27 /* VATPaymentRefundView_List.swift in Sources */,
+				DF6309022B01EEB600FC43EB /* CultivateView_Law_EPR.swift in Sources */,
+				DFAA5B252B074155005181D6 /* InformationView_Charts.swift in Sources */,
+				DF664E402AE511430069B7BF /* PrivacyView.swift in Sources */,
+				DF48CACD2AE9FF230093DC4B /* InformationView.swift in Sources */,
+				DF7A9C4D2ADA659200DA1C9B /* ExampleJSON.swift in Sources */,
+				DFF429B92ADBA3A8008491EF /* TaxdeclarationRequest.swift in Sources */,
+				DF674F992AEE44CF0099DA0C /* addEPRServiceView.swift in Sources */,
+				DFE41F512AE6C972004D6689 /* EprregistrationRequest.swift in Sources */,
+				DF735E3B2AE610DC00242448 /* Abolish.swift in Sources */,
+				DFC0468C2ADBCC3000C12FA2 /* TabLayoutView.swift in Sources */,
+				DF664E462AE52AF30069B7BF /* LawSearchView.swift in Sources */,
+				DF6309192B0270E300FC43EB /* UserView_Company.swift in Sources */,
+				DF48CAD52AEA06F50093DC4B /* DeclarationView_One.swift in Sources */,
+				DF6309112B02291500FC43EB /* CultivateView_market.swift in Sources */,
+				DFAFD0792AFE212D0049270B /* CultivateView_Information_List.swift in Sources */,
+				DF735E3E2AE63E0C00242448 /* FileUpload.swift in Sources */,
+				DF299CDE2ADC489E00806482 /* WorkOrderView.swift in Sources */,
+				DF6308FE2B01EA0700FC43EB /* ConsumptionView_Search_One.swift in Sources */,
+				DF62D4BC2ADE368800E73E21 /* AgencyServiceInformationView_Legal.swift in Sources */,
+				DFAFD0852AFE3B910049270B /* Data.swift in Sources */,
+				DF1C26AC2AF21F1B00E2F261 /* TranslateViewController.swift in Sources */,
+				DF16D9982AF337110057E137 /* TaxPaymentView_Edit.swift in Sources */,
+				DFF429C12ADBAC86008491EF /* VatdeclarationdetailsRequest.swift in Sources */,
+				DF6308F12B00F76D00FC43EB /* ConsumptionView_List.swift in Sources */,
+				DF299CE02ADC491100806482 /* WorkOrder_One_View.swift in Sources */,
+				DF7A9C622ADA8A6C00DA1C9B /* WorkorderRequestAPI.swift in Sources */,
+				DF16D9962AF328F70057E137 /* TaxpaymentRequest.swift in Sources */,
+				DF3486472AF0874D006974D7 /* EPRdeclatationView_List.swift in Sources */,
+				DF7A9C4A2ADA5ADD00DA1C9B /* CompanyRequest.swift in Sources */,
+				DF2E77112AE0D199004F24E0 /* VATDeclarationViewAPI.swift in Sources */,
+				DF674F902AEE3F720099DA0C /* EprserviceRequestAPI.swift in Sources */,
+				DF2E77132AE24F02004F24E0 /* VATDclarationView_Finish.swift in Sources */,
+				DFB252F72AF88BF000FC07D3 /* ComplianceapplicationRequestAPI.swift in Sources */,
+				DFC046902ADBD2EA00C12FA2 /* UserViewModel.swift in Sources */,
+				DF674F9D2AEE455F0099DA0C /* EPRServiceInformationView.swift in Sources */,
+				DF6309172B026C4400FC43EB /* UserView_Information.swift in Sources */,
+				DF5540A12B22325400EEC440 /* BaseURL.swift in Sources */,
+				DF16D9922AF325310057E137 /* TaxPaymentView_List.swift in Sources */,
+				DFF429B72ADBA39A008491EF /* TaxdeclarationRequestAPI.swift in Sources */,
+				DF6309002B01EEA400FC43EB /* CultivateView_Law_VAT.swift in Sources */,
+				DF63091F2B03186100FC43EB /* ConsumptionViewModel.swift in Sources */,
+				DFC046942ADBD6D100C12FA2 /* UserView.swift in Sources */,
+				DFB252F32AF885BA00FC07D3 /* EudeclarationofconformityRequest.swift in Sources */,
+				DFE41F572AE6D2C5004D6689 /* EprdeclarationRequestAPI.swift in Sources */,
+				DF16D9942AF328DE0057E137 /* TaxpaymentRequestAPI.swift in Sources */,
+				DF6309072B01F7F800FC43EB /* ExpandedView.swift in Sources */,
+				DF25C8BE2AF9EB79006C7AD3 /* CultivateView_Introduction_Product.swift in Sources */,
+				DFAFD0822AFE35EB0049270B /* Random.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF801F8C2AD7875A0096DFCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF801F952AD7875A0096DFCF /* rule_apple_demoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF801F962AD7875A0096DFCF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF801FA12AD7875A0096DFCF /* rule_apple_demoUITestsLaunchTests.swift in Sources */,
+				DF801F9F2AD7875A0096DFCF /* rule_apple_demoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DF801F922AD7875A0096DFCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF801F7F2AD787580096DFCF /* rule_apple_demo */;
+			targetProxy = DF801F912AD7875A0096DFCF /* PBXContainerItemProxy */;
+		};
+		DF801F9C2AD7875A0096DFCF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DF801F7F2AD787580096DFCF /* rule_apple_demo */;
+			targetProxy = DF801F9B2AD7875A0096DFCF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		DF801FA22AD7875A0096DFCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = FALSE;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DF801FA32AD7875A0096DFCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = FALSE;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DF801FA52AD7875A0096DFCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7981B478AFF772C2B5154B7 /* Pods-rule_apple_demo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"rule_apple_demo/Preview Content\"";
+				DEVELOPMENT_TEAM = M4NFL8A3AS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "rule-apple-demo-Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.rule-apple-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DF801FA62AD7875A0096DFCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 723AC100C56ACB0D82FF1DA2 /* Pods-rule_apple_demo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"rule_apple_demo/Preview Content\"";
+				DEVELOPMENT_TEAM = M4NFL8A3AS;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "rule-apple-demo-Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.rule-apple-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		DF801FA82AD7875A0096DFCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CC03DFD635CCC161E0687C6 /* Pods-rule_apple_demoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M4NFL8A3AS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.rule-apple-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rule_apple_demo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/rule_apple_demo";
+			};
+			name = Debug;
+		};
+		DF801FA92AD7875A0096DFCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CBEA73AD18A8EA79B9D3C07 /* Pods-rule_apple_demoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M4NFL8A3AS;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.rule-apple-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/rule_apple_demo.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/rule_apple_demo";
+			};
+			name = Release;
+		};
+		DF801FAB2AD7875A0096DFCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08CC911BD023198F7AD39D12 /* Pods-rule_apple_demo-rule_apple_demoUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M4NFL8A3AS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.rule-apple-demoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = rule_apple_demo;
+			};
+			name = Debug;
+		};
+		DF801FAC2AD7875A0096DFCF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D12B5DD36BB90F1AB4910042 /* Pods-rule_apple_demo-rule_apple_demoUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = M4NFL8A3AS;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "-.rule-apple-demoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = rule_apple_demo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DF801F7B2AD787580096DFCF /* Build configuration list for PBXProject "rule_apple_demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF801FA22AD7875A0096DFCF /* Debug */,
+				DF801FA32AD7875A0096DFCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF801FA42AD7875A0096DFCF /* Build configuration list for PBXNativeTarget "rule_apple_demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF801FA52AD7875A0096DFCF /* Debug */,
+				DF801FA62AD7875A0096DFCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF801FA72AD7875A0096DFCF /* Build configuration list for PBXNativeTarget "rule_apple_demoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF801FA82AD7875A0096DFCF /* Debug */,
+				DF801FA92AD7875A0096DFCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DF801FAA2AD7875A0096DFCF /* Build configuration list for PBXNativeTarget "rule_apple_demoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DF801FAB2AD7875A0096DFCF /* Debug */,
+				DF801FAC2AD7875A0096DFCF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DF2015E92B00A82A00110D2F /* XCRemoteSwiftPackageReference "Pages" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/nachonavarro/Pages";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.5;
+			};
+		};
+		DF25C8BF2AFB6103006C7AD3 /* XCRemoteSwiftPackageReference "StepperView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/badrinathvm/StepperView.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.6.7;
+			};
+		};
+		DF25C8C42AFB70FD006C7AD3 /* XCRemoteSwiftPackageReference "SwiftUICharts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/willdale/SwiftUICharts";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.10.2;
+			};
+		};
+		DF299CD92ADBFFF300806482 /* XCRemoteSwiftPackageReference "TabBar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onl1ner/TabBar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
+		DF299CED2ADD127F00806482 /* XCRemoteSwiftPackageReference "SlideOverCard" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/joogps/SlideOverCard";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DF2015EA2B00A82A00110D2F /* Pages */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF2015E92B00A82A00110D2F /* XCRemoteSwiftPackageReference "Pages" */;
+			productName = Pages;
+		};
+		DF25C8C02AFB6103006C7AD3 /* StepperView */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF25C8BF2AFB6103006C7AD3 /* XCRemoteSwiftPackageReference "StepperView" */;
+			productName = StepperView;
+		};
+		DF25C8C52AFB70FD006C7AD3 /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF25C8C42AFB70FD006C7AD3 /* XCRemoteSwiftPackageReference "SwiftUICharts" */;
+			productName = SwiftUICharts;
+		};
+		DF299CDA2ADBFFF300806482 /* TabBar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF299CD92ADBFFF300806482 /* XCRemoteSwiftPackageReference "TabBar" */;
+			productName = TabBar;
+		};
+		DF299CEE2ADD127F00806482 /* SlideOverCard */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DF299CED2ADD127F00806482 /* XCRemoteSwiftPackageReference "SlideOverCard" */;
+			productName = SlideOverCard;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DF801F782AD787580096DFCF /* Project object */;
+}

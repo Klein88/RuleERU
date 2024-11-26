@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="web.rulemanage.mapper.ProductsMapper">
+
+    <resultMap id="BaseResultMap" type="web.rulemanage.domain.Products">
+            <id property="productid" column="ProductID" jdbcType="INTEGER"/>
+            <result property="companyid" column="CompanyID" jdbcType="INTEGER"/>
+            <result property="productname" column="ProductName" jdbcType="VARCHAR"/>
+            <result property="productdescription" column="ProductDescription" jdbcType="VARCHAR"/>
+            <result property="productprice" column="ProductPrice" jdbcType="DECIMAL"/>
+            <result property="productcategory" column="ProductCategory" jdbcType="VARCHAR"/>
+            <result property="productorigin" column="ProductOrigin" jdbcType="VARCHAR"/>
+            <result property="manufacturedate" column="ManufactureDate" jdbcType="DATE"/>
+            <result property="expirydate" column="ExpiryDate" jdbcType="DATE"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        ProductID,CompanyID,ProductName,
+        ProductDescription,ProductPrice,ProductCategory,
+        ProductOrigin,ManufactureDate,ExpiryDate
+    </sql>
+</mapper>

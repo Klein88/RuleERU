@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="web.rulemanage.mapper.ComplianceapplicationMapper">
+
+    <resultMap id="BaseResultMap" type="web.rulemanage.domain.Complianceapplication">
+            <id property="applicationid" column="ApplicationID" jdbcType="INTEGER"/>
+            <result property="filetype" column="FileType" jdbcType="VARCHAR"/>
+            <result property="companyname" column="CompanyName" jdbcType="VARCHAR"/>
+            <result property="productchinesename" column="ProductChineseName" jdbcType="VARCHAR"/>
+            <result property="productenglishname" column="ProductEnglishName" jdbcType="VARCHAR"/>
+            <result property="trademark" column="Trademark" jdbcType="VARCHAR"/>
+            <result property="applicationdate" column="ApplicationDate" jdbcType="DATE"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        ApplicationID,FileType,CompanyName,
+        ProductChineseName,ProductEnglishName,Trademark,
+        ApplicationDate
+    </sql>
+</mapper>

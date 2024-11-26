@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="web.rulemanage.mapper.UserMapper">
+
+    <resultMap id="BaseResultMap" type="web.rulemanage.domain.User">
+            <id property="userid" column="UserID" jdbcType="INTEGER"/>
+            <result property="username" column="Username" jdbcType="VARCHAR"/>
+            <result property="password" column="Password" jdbcType="VARCHAR"/>
+            <result property="avatar" column="Avatar" jdbcType="VARCHAR"/>
+            <result property="email" column="Email" jdbcType="VARCHAR"/>
+            <result property="usertype" column="UserType" jdbcType="OTHER"/>
+            <result property="passwordchangedate" column="PasswordChangeDate" jdbcType="DATE"/>
+            <result property="lastlogindate" column="LastLoginDate" jdbcType="DATE"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        UserID,Username,Password,
+        Avatar,Email,UserType,
+        PasswordChangeDate,LastLoginDate
+    </sql>
+</mapper>

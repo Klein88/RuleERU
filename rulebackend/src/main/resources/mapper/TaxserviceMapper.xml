@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="web.rulemanage.mapper.TaxserviceMapper">
+
+    <resultMap id="BaseResultMap" type="web.rulemanage.domain.Taxservice">
+            <id property="taxserviceid" column="TaxServiceID" jdbcType="INTEGER"/>
+            <result property="taxtype" column="TaxType" jdbcType="VARCHAR"/>
+            <result property="country" column="Country" jdbcType="VARCHAR"/>
+            <result property="servicetype" column="ServiceType" jdbcType="VARCHAR"/>
+            <result property="companyname" column="CompanyName" jdbcType="VARCHAR"/>
+            <result property="vatnumber" column="VATNumber" jdbcType="VARCHAR"/>
+            <result property="serviceprogress" column="ServiceProgress" jdbcType="VARCHAR"/>
+            <result property="taxrate" column="TaxRate" jdbcType="DECIMAL"/>
+            <result property="servicesummit" column="ServiceSummit" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        TaxServiceID,TaxType,Country,
+        ServiceType,CompanyName,VATNumber,
+        ServiceProgress,TaxRate,ServiceSummit
+    </sql>
+</mapper>

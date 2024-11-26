@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f7"
+    android:orientation="vertical">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/Tlfagui"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/ic_nav_back"
+            app:title="法规">
+        </androidx.appcompat.widget.Toolbar>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="@drawable/frame_white">
+
+                    <ImageButton
+                        android:id="@+id/imb_1"
+                        android:layout_width="180dp"
+                        android:layout_height="140dp"
+                        android:layout_marginStart="28dp"
+                        android:background="@drawable/vatintroduce_part1_1"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/laws_vat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="VAT法规->"
+                        android:textSize="22sp"
+                        android:layout_marginEnd="30dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/frame_white">
+
+                    <ImageButton
+                        android:id="@+id/imb_2"
+                        android:layout_width="180dp"
+                        android:layout_height="140dp"
+                        android:background="@drawable/eprintroduce_part1_1"
+                        android:layout_marginStart="30dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/statute_epr"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="EPR法规->"
+                        android:textSize="22sp"
+                        android:layout_marginEnd="30dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="欧盟法规查询网站"
+                    android:layout_marginStart="20dp"
+                    android:textSize="24sp"
+                    android:textStyle="bold"/>
+                <WebView
+                    android:id="@+id/webview"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    tools:ignore="WebViewLayout" />
+            </LinearLayout>
+        </ScrollView>
+</LinearLayout>

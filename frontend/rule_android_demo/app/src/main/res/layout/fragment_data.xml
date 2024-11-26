@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.fragment.DataFragment">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:orientation="horizontal"
+            android:padding="5dp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="样式\n选择："
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+                <Spinner
+                    android:id="@+id/spinner1"
+                    android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:entries="@array/form"
+                    android:background="@drawable/selector_for_custom_spinner"
+                    android:popupBackground="@drawable/shape_for_custom_spinner" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:layout_marginLeft="5dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="市场："
+                    android:textStyle="bold"
+                    android:textSize="18sp"/>
+
+                <Spinner
+                    android:id="@+id/spinner2"
+                    android:layout_width="140dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="10dp"
+                    android:entries="@array/shichang"
+                    android:background="@drawable/selector_for_custom_spinner"
+                    android:popupBackground="@drawable/shape_for_custom_spinner" />
+            </LinearLayout>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/sp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="123"
+            android:textSize="18dp"
+            android:padding="10dp"/>
+
+        <FrameLayout
+            android:id="@+id/chartContainer"
+            android:layout_width="match_parent"
+            android:layout_height="300dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="销售增长率"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/text_xiaoshou"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="3.181427%"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="市场占比"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/text_shichang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="13.334321%"
+                    android:textStyle="bold"/>
+            </LinearLayout>
+        </LinearLayout>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardView"
+            android:layout_width="370dp"
+            android:layout_height="230dp"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/frame_blue1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/heart_square" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:text="市场建议"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+
+            <TextView
+                android:id="@+id/jianyi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:layout_gravity="center"
+                android:text="此产品销售情况良好"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+
+</FrameLayout>

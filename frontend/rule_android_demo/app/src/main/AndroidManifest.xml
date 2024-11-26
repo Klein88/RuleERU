@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Rule_android_demo"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".view.activity.Privacy.PrivacyActivity_no"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.Privacy.PrivacyActivity_yes"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.Privacy.PrivacyActivity_6"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.Privacy.PrivacyActivity_5"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.Privacy.PrivacyActivity_4"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.Privacy.PrivacyActivity_3"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.Privacy.PrivacyActivity_2"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.Privacy.PrivacyActivity_1"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.Privacy.PrivacyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.Learn.LearnComplianceIntroduceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.Learn.LearnEPRIntroduceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.Learn.LearnVATIntroduceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.Learn.LearndeclareActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.ConsumptionActivity_Edit"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.EPR.EPRDeclareDataActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.EPR.EPRDeclareActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.EPR.AddEPRActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.EPR.EPRPaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.EPR.ShenBaoEPRActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.Tax.DeclareVATActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.Tax.TaxPaymentActivity_Edit"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.Tax.TaxRefundActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.Tax.TaxPaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.Tax.ShenBaoTaxActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.Tax.AddVATActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.Tax.AddTaxActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.ConsumptionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.WordOrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.EPR.EnvironmentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.Tax.TaxActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.LoginActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".view.activity.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".view.activity.Learn.Search_Result"
+            android:exported="false" />
+        <activity android:name=".view.activity.Learn.train_market"
+            android:exported="false"/>
+        <activity android:name=".view.activity.Learn.train_other"
+            android:exported="false"/>
+        <activity android:name=".view.activity.Learn.train_laws"
+            android:exported="false"/>
+        <activity android:name=".view.activity.Learn.train_statute"
+            android:exported="false"/>
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="zjc.edu.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activity.Tax.AddTaxActivity"
+    android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/Tladd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:navigationIcon="@drawable/ic_nav_back">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tv_vat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VAT信息"
+                    android:textSize="25sp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="100dp"/>
+
+                <Button
+                    android:id="@+id/btn_more"
+                    android:layout_width="25dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginLeft="120dp"
+                    android:background="@drawable/baseline_table_rows_24"
+                    />
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+
+
+
+
+
+
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tb_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="步骤一" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="步骤二" />
+
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="步骤三" />
+        <com.google.android.material.tabs.TabItem
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="步骤四" />
+
+    </com.google.android.material.tabs.TabLayout>
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/Vp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

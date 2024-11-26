@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="web.rulemanage.mapper.DocumentsMapper">
+
+    <resultMap id="BaseResultMap" type="web.rulemanage.domain.Documents">
+            <id property="documentid" column="DocumentID" jdbcType="INTEGER"/>
+            <result property="documenttitle" column="DocumentTitle" jdbcType="VARCHAR"/>
+            <result property="documentcontent" column="DocumentContent" jdbcType="VARCHAR"/>
+            <result property="documentcategory" column="DocumentCategory" jdbcType="OTHER"/>
+            <result property="documentreadCount" column="DocumentRead_count" jdbcType="INTEGER"/>
+            <result property="documentcreatedAt" column="DocumentCreated_at" jdbcType="TIMESTAMP"/>
+            <result property="documentupdatedAt" column="DocumentUpdated_at" jdbcType="TIMESTAMP"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        DocumentID,DocumentTitle,DocumentContent,
+        DocumentCategory,DocumentRead_count,DocumentCreated_at,
+        DocumentUpdated_at
+    </sql>
+</mapper>

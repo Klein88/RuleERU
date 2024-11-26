@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="web.rulemanage.mapper.TaxcalculationdetailsMapper">
+
+    <resultMap id="BaseResultMap" type="web.rulemanage.domain.Taxcalculationdetails">
+            <id property="calculationdetailid" column="CalculationDetailID" jdbcType="INTEGER"/>
+            <result property="declarationdetailid" column="DeclarationDetailID" jdbcType="INTEGER"/>
+            <result property="taxablesalesamount" column="TaxableSalesAmount" jdbcType="DECIMAL"/>
+            <result property="taxrate" column="TaxRate" jdbcType="DECIMAL"/>
+            <result property="netcostamount" column="NetCostAmount" jdbcType="DECIMAL"/>
+            <result property="netsalesamount" column="NetSalesAmount" jdbcType="DECIMAL"/>
+            <result property="outputvat" column="OutputVAT" jdbcType="DECIMAL"/>
+            <result property="importvat" column="ImportVAT" jdbcType="DECIMAL"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        CalculationDetailID,DeclarationDetailID,TaxableSalesAmount,
+        TaxRate,NetCostAmount,NetSalesAmount,
+        OutputVAT,ImportVAT
+    </sql>
+</mapper>

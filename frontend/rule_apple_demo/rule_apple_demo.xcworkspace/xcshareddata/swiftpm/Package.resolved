@@ -1,0 +1,50 @@
+{
+  "pins" : [
+    {
+      "identity" : "pages",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/nachonavarro/Pages",
+      "state" : {
+        "revision" : "4cdbe4ff2f9ddbfda8cf0376a2acb678a1a0a0a2",
+        "version" : "0.1.5"
+      }
+    },
+    {
+      "identity" : "slideovercard",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/joogps/SlideOverCard",
+      "state" : {
+        "revision" : "98af5370e49d3d51efb387aacee0245ec656e32b",
+        "version" : "2.1.0"
+      }
+    },
+    {
+      "identity" : "stepperview",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/badrinathvm/StepperView.git",
+      "state" : {
+        "revision" : "c66fb84c640fbc312f4eead0b7ae2a77f93e0839",
+        "version" : "1.6.7"
+      }
+    },
+    {
+      "identity" : "swiftuicharts",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/willdale/SwiftUICharts",
+      "state" : {
+        "revision" : "53a3a2f16730af6709283f83a9dc75a3dde252ff",
+        "version" : "2.10.2"
+      }
+    },
+    {
+      "identity" : "tabbar",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/onl1ner/TabBar.git",
+      "state" : {
+        "revision" : "995e6bc32829d0a0f5300d6f49b654412068dbbe",
+        "version" : "1.3.0"
+      }
+    }
+  ],
+  "version" : 2
+}

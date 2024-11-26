@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="web.rulemanage.mapper.CertificationsMapper">
+
+    <resultMap id="BaseResultMap" type="web.rulemanage.domain.Certifications">
+            <id property="certificationid" column="CertificationID" jdbcType="INTEGER"/>
+            <result property="productid" column="ProductID" jdbcType="INTEGER"/>
+            <result property="certificationname" column="CertificationName" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        CertificationID,ProductID,CertificationName
+    </sql>
+</mapper>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="web.rulemanage.mapper.EprdeclarationMapper">
+
+    <resultMap id="BaseResultMap" type="web.rulemanage.domain.Eprdeclaration">
+            <id property="declarationid" column="DeclarationID" jdbcType="INTEGER"/>
+            <result property="isrequiredtodeclare" column="IsRequiredToDeclare" jdbcType="TINYINT"/>
+            <result property="companyname" column="CompanyName" jdbcType="VARCHAR"/>
+            <result property="registrationnumber" column="RegistrationNumber" jdbcType="VARCHAR"/>
+            <result property="country" column="Country" jdbcType="VARCHAR"/>
+            <result property="servicetype" column="ServiceType" jdbcType="VARCHAR"/>
+            <result property="declarationcycle" column="DeclarationCycle" jdbcType="VARCHAR"/>
+            <result property="currentdeclarationperiod" column="CurrentDeclarationPeriod" jdbcType="VARCHAR"/>
+            <result property="startdeclarationdate" column="StartDeclarationDate" jdbcType="DATE"/>
+            <result property="enddeclarationdate" column="EndDeclarationDate" jdbcType="DATE"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        DeclarationID,IsRequiredToDeclare,CompanyName,
+        RegistrationNumber,Country,ServiceType,
+        DeclarationCycle,CurrentDeclarationPeriod,StartDeclarationDate,
+        EndDeclarationDate
+    </sql>
+</mapper>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="web.rulemanage.mapper.EprregistrationMapper">
+
+    <resultMap id="BaseResultMap" type="web.rulemanage.domain.Eprregistration">
+            <id property="registrationid" column="RegistrationID" jdbcType="INTEGER"/>
+            <result property="companyname" column="CompanyName" jdbcType="VARCHAR"/>
+            <result property="registrationnumber" column="RegistrationNumber" jdbcType="VARCHAR"/>
+            <result property="country" column="Country" jdbcType="VARCHAR"/>
+            <result property="servicetype" column="ServiceType" jdbcType="VARCHAR"/>
+            <result property="registrationstatus" column="RegistrationStatus" jdbcType="VARCHAR"/>
+            <result property="serviceexpirydate" column="ServiceExpiryDate" jdbcType="DATE"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        RegistrationID,CompanyName,RegistrationNumber,
+        Country,ServiceType,RegistrationStatus,
+        ServiceExpiryDate
+    </sql>
+</mapper>

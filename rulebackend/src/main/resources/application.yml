@@ -1,0 +1,76 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://121.40.119.233:3306/rule?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf-8
+    username: root
+    password: Zzjc2023!
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+  servlet:
+    multipart:
+      max-file-size: 200MB
+      max-request-size: 1000MB
+  oauth2:
+    client:
+      registration:
+        google:
+          client-id: 522656833570-1cv14p3gfgbgra9ccjkkje5fl61dtca2.apps.googleusercontent.com
+          client-secret: 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
+          scope: https://www.googleapis.com/auth/dialogflow
+          redirect-uri: "https://localhost:8081/login/oauth2/code/google"
+      provider:
+        google:
+          authorization-uri: "https://accounts.google.com/o/oauth2/auth"
+          token-uri: "https://accounts.google.com/o/oauth2/token"
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: false
+file-save-path: /usr/local/java
+server:
+  port: 8081
+  tomcat:
+    uri-encoding: UTF-8
+    max-http-header-size: 6553686
+knife4j:
+  enable: true
+  setting:
+    language: zh_cn
+    swagger-model-name: web.rulemanage.controller
+dialogflow:
+  projectId: 111228556881141391361
+  languageCode: zh-CN
+baidu:
+  api:
+    key: lkjA5SGsb0hB0eYHwMrqULt4
+    secret: FAiooayFcwchEZgv4GdSQrBNTOt73y2s
+hmrc:
+  client:
+    id: hMklCXtoDTJ2yIWdo2cBFHwn0UvV
+    secret: 451f360d-2587-4da3-b47a-7e4dc1688e96
+easy-captcha:
+  endpoint:
+    #配置http端点，默认/captcha
+    path: /captcha
+    #是否启用端点生成
+    enabled: true
+  #验证码类性
+  captcha: chinese
+  #验证码位数
+  length: 3
+  #验证码宽度
+  width: 130
+  #验证码高度
+  height: 48
+  #验证码字符类性
+  char-type: 2
+  #验证码背景颜色
+  background: "#000000"
+  #验证码输出格式
+  format: "png"
+  #验证码字体，只能配置默认字体,默认字体见Captcha.Font_1等等
+  font: 1
+taxdeclaration:
+  encryption:
+    key: abcdef

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="web.rulemanage.mapper.LocaltaxpolicyMapper">
+
+    <resultMap id="BaseResultMap" type="web.rulemanage.domain.Localtaxpolicy">
+            <id property="policyid" column="PolicyID" jdbcType="INTEGER"/>
+            <result property="region" column="Region" jdbcType="VARCHAR"/>
+            <result property="taxpolicydescription" column="TaxPolicyDescription" jdbcType="VARCHAR"/>
+            <result property="taxregulationdescription" column="TaxRegulationDescription" jdbcType="VARCHAR"/>
+            <result property="effectivedate" column="EffectiveDate" jdbcType="DATE"/>
+            <result property="expirydate" column="ExpiryDate" jdbcType="DATE"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        PolicyID,Region,TaxPolicyDescription,
+        TaxRegulationDescription,EffectiveDate,ExpiryDate
+    </sql>
+</mapper>
