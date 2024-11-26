@@ -15,8 +15,8 @@ spring:
     client:
       registration:
         google:
-          client-id: 522656833570-1cv14p3gfgbgra9ccjkkje5fl61dtca2.apps.googleusercontent.com
-          client-secret: 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
+          client-id: aaa
+          client-secret: bbb
           scope: https://www.googleapis.com/auth/dialogflow
           redirect-uri: "https://localhost:8081/login/oauth2/code/google"
       provider:
@@ -39,16 +39,16 @@ knife4j:
     language: zh_cn
     swagger-model-name: web.rulemanage.controller
 dialogflow:
-  projectId: 111228556881141391361
+  projectId: ccc
   languageCode: zh-CN
 baidu:
   api:
-    key: lkjA5SGsb0hB0eYHwMrqULt4
-    secret: FAiooayFcwchEZgv4GdSQrBNTOt73y2s
+    key: ddd
+    secret: eee
 hmrc:
   client:
-    id: hMklCXtoDTJ2yIWdo2cBFHwn0UvV
-    secret: 451f360d-2587-4da3-b47a-7e4dc1688e96
+    id: fff
+    secret: ggg
 easy-captcha:
   endpoint:
     #配置http端点，默认/captcha

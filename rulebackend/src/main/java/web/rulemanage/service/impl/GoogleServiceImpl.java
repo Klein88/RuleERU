@@ -26,8 +26,8 @@ public class GoogleServiceImpl implements GoogleService {
         headers.setContentType(MediaType.APPLICATION_FORM_URLENCODED);
 
         MultiValueMap<String, String> map= new LinkedMultiValueMap<>();
-        map.add("client_id", "522656833570-1cv14p3gfgbgra9ccjkkje5fl61dtca2.apps.googleusercontent.com");
-        map.add("client_secret", "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"); // 替换为您的 client_secret
+        map.add("client_id", "aaa");
+        map.add("client_secret", "bbb"); // 替换为您的 client_secret
         map.add("grant_type", "authorization_code");
         map.add("code", authorizationCode);
         map.add("redirect_uri", "https://localhost:8081");
@@ -41,7 +41,7 @@ public class GoogleServiceImpl implements GoogleService {
 
     @Override
     public String detectIntent(String accessToken, String sessionId, String text, String languageCode, String timeZone) {
-        String dialogflowApiUrl = "https://global-dialogflow.googleapis.com/v3/projects/rule-404306/locations/global/agents/d5af6b2f-bdb4-43eb-8584-fe24fc1cac88/sessions/" + sessionId + ":detectIntent";
+        String dialogflowApiUrl = "ccc" + sessionId + ":detectIntent";
 
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);

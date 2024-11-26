@@ -15,10 +15,10 @@ import org.springframework.util.MultiValueMap;
 @Service
 public class DialogflowServiceImpl implements DialogflowService {
 
-    @Value("522656833570-1cv14p3gfgbgra9ccjkkje5fl61dtca2.apps.googleusercontent.com")
+    @Value("aaa")
     private String clientId;
 
-    @Value("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")
+    @Value("bbb")
     private String clientSecret;
 
     @Value("https://accounts.google.com/o/oauth2/auth")
@@ -50,7 +50,7 @@ public class DialogflowServiceImpl implements DialogflowService {
         paramMap.add("client_secret", clientSecret);
         paramMap.add("redirect_uri", callbackUrl);
 //        paramMap.add("code", "authorization_code"); // 这里的 "AUTHORIZATION_CODE" 应该替换为你从 OAuth 流程中获取的授权码。
-        paramMap.add("code", "4/0AfJohXkiAhjGKAGnZShMLWTW-5OZgNvRerGNmRdY4hcYjPg5ryVQp_w55Ib8czeiUqkMwg");
+        paramMap.add("code", "ccc");
         HttpEntity<MultiValueMap<String, String>> requestEntity = new HttpEntity<>(paramMap, headers);
 
         ResponseEntity<Map> responseEntity = restTemplate.postForEntity(tokenUrl, requestEntity, Map.class);
@@ -83,7 +83,7 @@ public class DialogflowServiceImpl implements DialogflowService {
 
         HttpEntity<Map<String, Object>> requestEntity = new HttpEntity<>(bodyMap, headers);
 
-        String requestUrl = "https://global-dialogflow.googleapis.com/v3/projects/rule-404306/locations/global/agents/d5af6b2f-bdb4-43eb-8584-fe24fc1cac88/sessions/343:detectIntent";
+        String requestUrl = "https://global-dialogflow.googleapis.com/v3/projects/rule-404306/locations/global/agents/ddd";
 
         ResponseEntity<String> responseEntity = restTemplate.postForEntity(requestUrl, requestEntity, String.class);
 
